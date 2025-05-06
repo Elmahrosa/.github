@@ -1,2 +1,2 @@
 # .github
-Orgabization git repo
+Organization git repo
