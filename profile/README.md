@@ -37,7 +37,6 @@ Elmahrosa International E.S.T Organization is a pioneering entity based in Egypt
 
 ## Contact Information
 
-- **Website**: [https://elmahrosa-expo.com](https://elmahrosa-expo.com) 
 - **Email**: info@elmahrosa-expo.com
 - **Phone**: +20 1006167293
 
