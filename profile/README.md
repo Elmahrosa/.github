@@ -1,45 +1,48 @@
-# Elmahrosa International E.S.T Organization
+# Elmahrosa International — TEOS Egypt
 
-## Overview
+![Compliance](https://img.shields.io/badge/Compliance-TESL%20v2.0-green?style=for-the-badge)
+![SDG](https://img.shields.io/badge/SDG-Global%20Impact-blue?style=for-the-badge)
+![Treasury](https://img.shields.io/badge/Treasury-Staking%20%26%20Rewards-gold?style=for-the-badge)
+![Global](https://img.shields.io/badge/Deployment-Worldwide🌍-purple?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Audit%20Ready-red?style=for-the-badge)
 
-Elmahrosa International E.S.T Organization is a pioneering entity based in Egypt, dedicated to innovating and advancing new technologies. Our mission is to harness cutting-edge technology to drive progress and improve the quality of life for individuals and communities both locally and globally.
+Anchoring Egypt as co-owner of the world’s civic blockchain constitution.  
+We build compliance-first, bank-facing crypto gateways, scaling globally with SDG-aligned modules.
 
-## Mission Statement
+## 🌍 Overview
+Elmahrosa International is a pioneering civic-first organization based in Egypt, deploying blockchain platforms that fuse compliance, sustainability, and innovation.  
+Our mission is to empower banks, fintechs, and communities worldwide with secure, audit-ready digital infrastructure.
 
-- **Innovate**: To develop and implement groundbreaking technologies that address real-world challenges.
-- **Empower**: To provide tools and resources that enable individuals and organizations to thrive in a technology-driven world.
-- **Collaborate**: To foster partnerships with local and international stakeholders to enhance technological growth and sustainability.
+## ✨ Mission Statement
+- **Compliance-First**: Enforce TESL v2.0 licensing, governance automation, and audit-ready repo scaffolding.  
+- **Empower**: Deliver tools for banks, fintechs, and civic institutions to thrive in the digital era.  
+- **Scale Globally**: Anchor Egypt as the mythic hub while expanding deployments across Washington, D.C. and beyond.  
 
-## Core Values
+## 🏛 Core Values
+- **Integrity**: Transparent governance and regulator alignment.  
+- **Excellence**: Audit-ready repos, evergreen operation, and global scalability.  
+- **Sustainability**: Every module mapped to UN SDGs for long-term impact.  
 
-- **Integrity**: We uphold the highest standards of honesty and transparency in all our endeavors.
-- **Excellence**: We strive for excellence in every project, ensuring quality and effectiveness.
-- **Sustainability**: We are committed to creating solutions that are environmentally friendly and sustainable for future generations.
+## 🔧 Key Areas of Focus
+- **Bank-Facing Crypto Gateways**: Secure onboarding, treasury flows, staking, and compliance dashboards.  
+- **SDG-Aligned Modules**: Carbon tracking, smart agriculture, digital education, circular economy.  
+- **Global Deployment**: Civic-first blockchain expansion, productization, and SaaS/white-label models.  
 
-## Key Areas of Focus
+## 🌐 Current Projects
+- **TEOSNFT dApp (Pi Network)**: Petition-first entry, Egyptian-themed design, staking rewards, treasury contributions, NFT marketplace.  
+- **TEOS BankChain**: Global pilot for compliance-first banking integration.  
+- **Governance Automation**: Audit-ready dashboards, contributor badges, and ritualized repo hardening.  
 
-- **Research and Development**: Engaging in innovative research to create new technologies and improve existing ones.
-- **Education and Training**: Offering programs and workshops to educate individuals and organizations on the latest technological advancements.
-- **Community Engagement**: Working closely with local communities to understand their needs and develop tailored technological solutions.
+## 🤝 Get Involved
+- **Collaborate**: Join our civic-first mission as a contributor, partner, or investor.  
+- **Support**: Partnerships and contributions fuel our global expansion.  
+- **Stay Updated**: Follow our repos, social channels, and investor demos.  
 
-## Projects and Initiatives
-
-- **Smart Agriculture**: Implementing IoT solutions to enhance agricultural productivity and sustainability.
-- **Renewable Energy Solutions**: Developing technologies that promote the use of renewable energy sources.
-- **Digital Transformation**: Assisting businesses in adopting digital tools and strategies to improve efficiency and competitiveness.
-- **etc**
-
-## Get Involved
-
-- **Join Us**: We welcome individuals and organizations interested in collaborating with us on innovative projects.
-- **Support Our Mission**: Contributions and partnerships are vital to our success. Contact us to learn how you can help.
-- **Stay Updated**: Follow us on our social media channels and subscribe to our newsletter for the latest news and updates.
-
-## Contact Information
-
-- **Email**: info@elmahrosa-expo.com
-- **Phone**: +20 1006167293
+## 📬 Contact
+- **Email**: ayman@teosegypt.com  
+- **Phone**: +20 1006167293  
 
 ---
 
-Thank you for your interest in Elmahrosa International E.S.T Organization. Together, we can shape the future of technology in Egypt and beyond!
+Every commit is a civic milestone.  
+Together, we scale Egypt’s blockchain leadership into a global constitution.
