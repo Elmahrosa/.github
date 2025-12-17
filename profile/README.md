@@ -43,6 +43,26 @@ Our mission is to empower banks, fintechs, and communities worldwide with secure
 - **Phone**: +20 1006167293  
 
 ---
+# Elmahrosa International — TEOS Egypt
+
+Anchoring Egypt as co-owner of the world’s civic blockchain constitution.  
+We build compliance-first, bank-facing crypto gateways, scaling globally with SDG-aligned modules.
+
+## 🌍 Mission
+- Civic-first blockchain expansion
+- Audit-ready repo scaffolding
+- SDG mapping for global sustainability
+
+## 🚀 Current Deployments
+- TEOSNFT dApp on Pi Network
+- TEOS BankChain (global pilot)
+- Compliance dashboards & governance automation
+
+## 📜 Licensing
+TESL v2.0 enforced across all repos.  
+Audit-ready, regulator-aligned, evergreen operation.
+
+---
 
 Every commit is a civic milestone.  
 Together, we scale Egypt’s blockchain leadership into a global constitution.
