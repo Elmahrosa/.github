@@ -1,4 +1,17 @@
 # Elmahrosa International — TEOS Egypt
+# 🏛 Elmahrosa Organization
+
+Welcome to the **Elmahrosa Sovereign Ecosystem**.
+
+## 🔗 Core Repositories
+- [El-Mahrosa.Teos-Sovereign-System](https://github.com/Elmahrosa/El-Mahrosa.Teos-Sovereign-System) → Backbone
+- [TeosWallet](https://github.com/Elmahrosa/TeosWallet) → Non-custodial wallet
+- [Teos-Bankchain](https://github.com/Elmahrosa/Teos-Bankchain) → Regulated financial backbone
+- [TEOS-NFT-AI-Generator](https://github.com/Elmahrosa/TEOS-NFT-AI-Generator) → NFT minting
+- [Ask-Teos-AI](https://github.com/Elmahrosa/Ask-Teos-AI) → AI gateway
+
+## 🌍 Vision
+Egypt’s sovereign digital backbone, aligned with **UN SDGs** and **Vision 2030**.
 
 ![Compliance](https://img.shields.io/badge/Compliance-TESL%20v2.0-green?style=for-the-badge)
 ![SDG](https://img.shields.io/badge/SDG-Global%20Impact-blue?style=for-the-badge)
