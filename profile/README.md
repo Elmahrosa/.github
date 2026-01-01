@@ -2,7 +2,9 @@
 # 🏛 Elmahrosa International — TEOS Egypt
 
 ### Sovereign Civic Blockchain Infrastructure | Engineered in Egypt — Built for the World
-
+![Repositories](https://img.shields.io/badge/Repositories-43+-blue?style=for-the-badge)
+![Followers](https://img.shields.io/github/followers/Elmahrosa?style=for-the-badge&logo=github)
+![Stars (Main Repo Example)](https://img.shields.io/github/stars/Elmahrosa/.github?style=for-the-badge)
 ![Sovereign](https://img.shields.io/badge/Sovereign-Infrastructure-black?style=for-the-badge)
 ![Compliance](https://img.shields.io/badge/Compliance-TESL_v2.0-green?style=for-the-badge)
 ![SDG](https://img.shields.io/badge/UN_SDG-Measurable-blue?style=for-the-badge)
