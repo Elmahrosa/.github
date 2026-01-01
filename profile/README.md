@@ -1,8 +1,17 @@
 # 📦 Elmahrosa International — TEOS Egypt
 
+## 🏛 Elmahrosa Organization
+
+Welcome to the **Elmahrosa Sovereign Ecosystem**, a civic-first blockchain organization built in **Egypt**, designed to scale globally with compliance, sustainability, and institutional trust.
+
+**Last Updated: January 2026**
+
 ### Engineered in Egypt — Built for the World
 
 **Sovereign blockchain infrastructure | Civic impact | Regulator-aligned | Open source**
+
+[Official Whitepaper](https://whitepaper.teosegypt.com)  
+[Petition – 580+ Signatures](https://c.org/vjvVVLsMs7)
 
 ---
 
@@ -103,10 +112,6 @@ Public repos: **43+** · Built solo by Ayman Seif
 | [Mine_alltokens](https://github.com/Elmahrosa/Mine_alltokens)                                     |        ![Mining](https://img.shields.io/badge/Mining-Aggregator-Grey?style=flat)        | Token mining aggregator.                                   |
 | [demo-repository](https://github.com/Elmahrosa/demo-repository)                                   |             ![Demo](https://img.shields.io/badge/Demo-Repo-Blue?style=flat)             | Showcase demo code.                                        |
 
-## 🏛 Elmahrosa Organization
-
-Welcome to the **Elmahrosa Sovereign Ecosystem**, a civic-first blockchain organization built in **Egypt**, designed to scale globally with compliance, sustainability, and institutional trust.
-
 ---
 
 ## 🔗 Core Repositories
@@ -132,6 +137,35 @@ A **sovereign digital infrastructure layer**, built in Egypt and aligned with:
 * **Global audit and compliance standards**
 
 Elmahrosa’s mission is to **anchor Egypt as a founding node in global civic blockchain infrastructure**, contributing to the world’s future constitutional digital layer.
+
+---
+Here is your content **re-structured, polished, and landing-page ready**, while keeping all your original meaning and data intact and correct:
+
+---
+
+# 🏛 **Elmahrosa International — TEOS Egypt**
+
+### *Sovereign Civic Blockchain Infrastructure Engineered in Egypt*
+
+![Sovereign](https://img.shields.io/badge/Sovereign-Infrastructure-black?style=for-the-badge)
+![Compliance](https://img.shields.io/badge/Compliance-TESL_v2.0-green?style=for-the-badge)
+![SDG](https://img.shields.io/badge/UN_SDG-Measurable-blue?style=for-the-badge)
+![Multi-Chain](https://img.shields.io/badge/Interop-Multi_Chain-red?style=for-the-badge)
+
+---
+
+## 📘 Table of Contents *(Auto-Generated)*
+
+* [System Architecture](#system-architecture)
+* [Overview](#overview)
+* [Mission Statement](#mission-statement)
+* [Core Values](#core-values)
+* [Key Areas of Focus](#key-areas-of-focus)
+* [Current Projects](#current-projects)
+* [Deployments](#deployments)
+* [Compliance & Standards](#compliance--standards)
+* [Founder Badges](#founder-badges)
+* [Contact & Verification](#contact--verification)
 
 ---
 
@@ -164,133 +198,148 @@ flowchart TD
 
 ## 🌍 Overview
 
-**Elmahrosa International** is a civic-first blockchain organization based in Egypt, deploying sovereign platforms that fuse:
+Elmahrosa International is a **civic-first blockchain organization based in Egypt**, deploying sovereign platforms that fuse:
 
 * **Regulator-grade compliance**
 * **Institutional wallet infrastructure**
-* **SDG-measurable impact modules**
+* **SDG-measurable civic impact modules**
 * **Cross-chain global interoperability**
-* **Audit-ready delivery pipelines**
+* **Audit-ready CI/CD delivery pipelines**
 
-This ecosystem is built by a **solo founder**, engineered for national sovereignty but structured for **worldwide deployment and adoption**.
-
----
-
-## ✨ Mission Statement
-
-* **Compliance-First:** Institutional trust through TESL v2.0 licensing, audit logs, and governance automation.
-* **Empowerment:** Deliver secure blockchain infrastructure for citizens, banks, fintechs, and civic institutions.
-* **Global Scalability:** Architected in Egypt, deployable anywhere — from Africa to the Middle East, Europe, and the Americas.
-* **Civic Leadership:** Position Egypt as a **co-author and infrastructure contributor** to global civic blockchain evolution.
+This ecosystem is **built by a solo founder**, engineered for **national digital sovereignty**, yet structured for **global deployment and institutional adoption**.
 
 ---
 
-## 🏛 Core Values
+## 🎯 Mission Statement
 
-* **Integrity:** Transparent governance, verifiable commits, regulator alignment.
-* **Excellence:** Audit-ready repositories, tested and production-hardened.
-* **Sustainability:** Every module delivers measurable SDG impact.
-* **Sovereignty:** Built in Egypt, owned by Egyptians, serving global infrastructure needs.
-
----
-
-## 🔧 Key Areas of Focus
-
-* **Bank-Facing Crypto Gateways:** Wallet onboarding, treasury, staking, settlement, compliance dashboards.
-* **SDG Modules:**
-
-  * Carbon & climate tracking (SDG 13)
-  * Smart agriculture & food security (SDG 2)
-  * Digital education (SDG 4)
-  * Circular economy & sustainability (SDG 12)
-* **Global Deployment Models:** SaaS, white-label, institutional pilots, and cross-chain expansions.
+1. **Compliance-First**
+   Institutional trust through **TESL v2.0 licensing**, immutable audit logs, and automated governance.
+2. **Empowerment**
+   Secure blockchain rails for **citizens, banks, fintechs, and civic institutions**.
+3. **Global Scalability**
+   **Designed in Egypt, deployable anywhere** — Africa → Middle East → Europe → Americas.
+4. **Civic Leadership**
+   Establish Egypt as a **core infrastructure contributor to global civic blockchain evolution**.
 
 ---
 
-## 🌐 Current Projects
+## 🔐 Core Values
 
-* **TEOS NFT dApp (Pi Network):** Egyptian-branded NFT minting, petition-first onboarding, staking rewards, treasury flows, marketplace.
-* **TEOS BankChain:** Global pilot for regulated banking integration.
-* **Governance Automation:** Audit dashboards, contributor credentials, deployment integrity checks.
+* **Integrity**: Transparent governance, verifiable commits, regulator alignment
+* **Excellence**: Production-hardened, tested, audit-ready repositories
+* **Sustainability**: Every module delivers measurable **UN SDG impact**
+* **Sovereignty**: Built in Egypt, owned by Egyptians, trusted by global institutions
 
 ---
 
-## 🚀 Deployments
+## 🏦 Key Areas of Focus
+
+### 💼 1. Bank-Facing Crypto Gateways
+
+* Wallet onboarding
+* Treasury & settlements
+* Staking & settlement rails
+* Compliance dashboards
+* Institutional API gateways
+
+### 🌱 2. UN SDG Impact Modules
+
+| SDG        | Focus Module                       |
+| ---------- | ---------------------------------- |
+| **SDG 2**  | Smart agriculture & food security  |
+| **SDG 4**  | Digital education & learning rails |
+| **SDG 12** | Circular economy & sustainability  |
+| **SDG 13** | Carbon & climate tracking          |
+
+### 🌐 3. Deployment Models
+
+* SaaS infrastructure
+* White-label national pilots
+* Institutional POCs
+* Cross-chain expansions
+
+---
+
+## 🚀 Current Projects
+
+### 🖼 **TEOS NFT dApp (Pi Network)**
+
+* Egyptian-branded NFT minting
+* Petition-first onboarding
+* Staking rewards
+* Treasury & marketplace flows
+
+### 🏛 **TEOS BankChain**
+
+* Regulated banking backbone
+* Global pilot integration model
+
+### 🤖 **Governance Automation**
+
+* Immutable audit dashboards
+* Contributor verification
+* Deployment integrity checks
+
+### 🗺 **Map of Pi Services**
+
+* Pi geospatial service index
+
+### 🌍 **Humanitarian Infra**
+
+* Digital reconstruction blueprints
+
+---
+
+## 🌐 Deployments
 
 * **PiNet sovereign demos** for institutional review
-* **TEOS NFT platform**
-* **BankChain global pilot**
-* **Governance & compliance dashboards**
+* TEOS NFT minting & marketplace
+* BankChain regulated finance pilot
+* Governance and compliance dashboards
 
 ---
 
-## 🔐 Compliance & Standards
+## 📜 Compliance & Standards
 
-![Compliance](https://img.shields.io/badge/Compliance-TESL%20v2.0-green?style=for-the-badge)
-![SDG](https://img.shields.io/badge/SDG-Global%20Impact-blue?style=for-the-badge)
-![Treasury](https://img.shields.io/badge/Treasury-Staking%20%26%20Rewards-gold?style=for-the-badge)
-![Global](https://img.shields.io/badge/Deployment-Worldwide-purple?style=for-the-badge)
-![Audit](https://img.shields.io/badge/Status-Audit%20Ready-red?style=for-the-badge)
+![License](https://img.shields.io/badge/License-TESL_v2.0-red?style=flat-square)
+![Audit](https://img.shields.io/badge/Audit-Ready-orange?style=flat-square)
 
----
-
-## 📜 Licensing
-
-**TESL v2.0** enforced across all repos
-*Audit-ready · regulator-aligned · evergreen infrastructure*
+* **TESL v2.0 enforced across all repos**
+* Immutable audit logs
+* Regulator-aligned civic automation
+* Institutional-safe infrastructure rails
 
 ---
 
-## 📬 Contact & Verification
+## 🏅 Founder Badges
 
-**Ayman Seif** — Founder & Sole Developer
+**Solo founder delivering sovereign infrastructure with global scale**
+
+| Badge                   | Meaning                              |
+| ----------------------- | ------------------------------------ |
+| **Civic Builder**       | Architects & codes all civic modules |
+| **Compliance Guardian** | Enforces TESL v2.0 & audit integrity |
+| **SDG Innovator**       | Designs measurable UN SDG impact     |
+| **Treasury Steward**    | Manages staking, rewards, treasury   |
+| **Global Deployer**     | Scales Egypt’s infra worldwide       |
+
+---
+
+## 📩 Contact & Verification
+
+**Founder & Sole Developer:** *Ayman Seif*
 
 * **Email:** [ayman@teosegypt.com](mailto:ayman@teosegypt.com)
 * **Phone:** +20 1006167293
-* **Solana Wallet:** Akvm3CbDN448fyD8qmQjowgBGpcYZtjuKFL4xT8PZhbF
-* **TEOS Token Mint:** AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo
-* **Telegram :** @Elmahrosapi
+* **Solana Wallet:** `Akvm3CbDN448fyD8qmQjowgBGpcYZtjuKFL4xT8PZhbF`
+* **TEOS Token Mint:** `AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo`
+* **Telegram:** `@Elmahrosapi`
 
 ---
 
-# 🏅 Founder Badges
+### **⚡ Final Tagline**
 
-**Solo founder delivering sovereign infrastructure with global scale:**
-
-![Civic Builder](https://img.shields.io/badge/Badge-Civic%20Builder-blue?style=for-the-badge\&logo=github)
-*Architecting and coding every civic-first module.*
-
-![Compliance Guardian](https://img.shields.io/badge/Badge-Compliance%20Guardian-green?style=for-the-badge\&logo=lock)
-*Enforcing TESL v2.0 and audit integrity.*
-
-![SDG Innovator](https://img.shields.io/badge/Badge-SDG%20Innovator-gold?style=for-the-badge\&logo=earth)
-*Designing measurable UN SDG impact modules.*
-
-![Treasury Steward](https://img.shields.io/badge/Badge-Treasury%20Steward-purple?style=for-the-badge\&logo=bitcoin)
-*Managing staking, rewards, and treasury flows.*
-
-![Global Deployer](https://img.shields.io/badge/Badge-Global%20Deployer-red?style=for-the-badge\&logo=globe)
-*Scaling Egypt’s blockchain infrastructure worldwide.*
-
----
-
----
-
-## 📬 Contact & Verification
-
-**Founder:** Ayman Seif
-📧 [ayman@teosegypt.com](mailto:ayman@teosegypt.com)
-📱 +20 1006167293
-
-**Solana Wallet:** `Akvm3CbDN448fyD8qmQjowgBGpcYZtjuKFL4xT8PZhbF`
-**TEOS Token Mint:** `AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo`
-
-
----
-
-
-### **Every commit is a civic milestone.**
-
-### *Built solo in Egypt — scaled for the world.*
+> **Every commit is a civic milestone.
+> Built solo in Egypt — scaled for the world.**
 
 ---
