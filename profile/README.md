@@ -1,8 +1,107 @@
-# 🏛 **Elmahrosa International — TEOS Egypt**
+# 📦 Elmahrosa International — TEOS Egypt
 
-### **Engineered in Egypt, for the World**
+### Engineered in Egypt — Built for the World
+
+**Sovereign blockchain infrastructure | Civic impact | Regulator-aligned | Open source**
 
 ---
+
+## 🛠️ Organization Stats
+
+![GitHub Org Repos](https://img.shields.io/github/repo-size/Elmahrosa?style=for-the-badge)
+![GitHub Followers](https://img.shields.io/github/followers/Elmahrosa?label=GitHub%20Followers\&style=for-the-badge)
+![GitHub Stars](https://img.shields.io/github/stars/Elmahrosa?style=for-the-badge)
+
+Public repos: **43+** · Built solo by Ayman Seif
+
+---
+
+## 📚 Repository Categories
+
+---
+
+## 🧠 Core Sovereign Infrastructure
+
+| Repo                                                                                                                    |                                         Badge                                        | Description                                                          |
+| ----------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------: | -------------------------------------------------------------------- |
+| [El-Mahrosa.Teos-Sovereign-System](https://github.com/Elmahrosa/El-Mahrosa.Teos-Sovereign-System)                       |          ![Rust](https://img.shields.io/badge/Rust-Solana-orange?style=flat)         | Unified civic-first sovereign infrastructure (Rust + Solana + SDKs). |
+| [TEOS-Governance](https://github.com/Elmahrosa/TEOS-Governance)                                                         |       ![JS](https://img.shields.io/badge/JavaScript-Governance-blue?style=flat)      | Governance logic & citizen civic modules.                            |
+| [International-Civic-Blockchain-Constitution](https://github.com/Elmahrosa/International-Civic-Blockchain-Constitution) |      ![TS](https://img.shields.io/badge/TypeScript-constitution-blue?style=flat)     | Global civic blockchain constitution & governance standards.         |
+| [Ask-Teos-AI](https://github.com/Elmahrosa/Ask-Teos-AI)                                                                 |           ![AI](https://img.shields.io/badge/AI-Gateway-purple?style=flat)           | Conversational AI interface for TEOS protocols.                      |
+| [Teos-Integration](https://github.com/Elmahrosa/Teos-Integration)                                                       |  ![Monorepo](https://img.shields.io/badge/Monorepo-Integration-lightgrey?style=flat) | Core integration, compliance, and automation layers.                 |
+| [Teos-App-Studio](https://github.com/Elmahrosa/Teos-App-Studio)                                                         | ![Monorepo](https://img.shields.io/badge/Monorepo-App%20Studio-lightgrey?style=flat) | TEOS ecosystem app development hub.                                  |
+
+---
+
+## 📊 Compliance & Documentation
+
+| Repo                                                                                |                                     Badge                                    | Description                                         |
+| ----------------------------------------------------------------------------------- | :--------------------------------------------------------------------------: | --------------------------------------------------- |
+| [TEOS-Egypt-Compliance-Kit](https://github.com/Elmahrosa/TEOS-Egypt-Compliance-Kit) | ![Docs](https://img.shields.io/badge/Docs-Compliance-brightgreen?style=flat) | Sovereign-grade compliance & governance frameworks. |
+
+---
+
+## 🌐 Ecosystem Platforms & Services
+
+| Repo                                                                |                                     Badge                                     | Description                         |
+| ------------------------------------------------------------------- | :---------------------------------------------------------------------------: | ----------------------------------- |
+| [website](https://github.com/Elmahrosa/website)                     |      ![Web](https://img.shields.io/badge/Web-TEOS%20Site-blue?style=flat)     | Official public website.            |
+| [teosegyptweb](https://github.com/Elmahrosa/teosegyptweb)           |       ![Web](https://img.shields.io/badge/Web-Frontend-blue?style=flat)       | TEOS web frontend & landing assets. |
+| [TEOS-Services-API](https://github.com/Elmahrosa/TEOS-Services-API) |     ![API](https://img.shields.io/badge/API-Services-lightgrey?style=flat)    | Core backend API services.          |
+| [TEOS-Payment-Rail](https://github.com/Elmahrosa/TEOS-Payment-Rail) | ![Payment](https://img.shields.io/badge/Payments-TEOS%20Rail-gold?style=flat) | On-chain payment infrastructure.    |
+| [TEOS-Token-SPL](https://github.com/Elmahrosa/TEOS-Token-SPL)       |   ![Token](https://img.shields.io/badge/Token-SPL-Scripts-purple?style=flat)  | SPL minting & token support.        |
+
+---
+
+## 🏦 Banking & Financial Infrastructure
+
+| Repo                                                                        |                                       Badge                                       | Description                                    |
+| --------------------------------------------------------------------------- | :-------------------------------------------------------------------------------: | ---------------------------------------------- |
+| [Teos-Bankchain](https://github.com/Elmahrosa/Teos-Bankchain)               |  ![Finance](https://img.shields.io/badge/Finance-BankChain-Core-green?style=flat) | Decentralized digital banking engine.          |
+| [Teos-Civic-Mixer](https://github.com/Elmahrosa/Teos-Civic-Mixer)           |     ![Analytics](https://img.shields.io/badge/Analytics-Mixer-blue?style=flat)    | Wallet analytics & community transparency.     |
+| [Teos-Bankchain-Mobile](https://github.com/Elmahrosa/Teos-Bankchain-Mobile) | ![Mobile](https://img.shields.io/badge/Mobile-BankChain-App-lightgrey?style=flat) | Mobile interface for digital banking services. |
+
+---
+
+## 🖼️ Civic & Community Platforms
+
+| Repo                                                                                |                                     Badge                                    | Description                                      |
+| ----------------------------------------------------------------------------------- | :--------------------------------------------------------------------------: | ------------------------------------------------ |
+| [salma-unity-care-hospital](https://github.com/Elmahrosa/salma-unity-care-hospital) | ![Health](https://img.shields.io/badge/Health-Chain-Hospital-red?style=flat) | Healthcare blockchain system.                    |
+| [TeosEgypt-AI-Travel-OS](https://github.com/Elmahrosa/TeosEgypt-AI-Travel-OS)       |      ![OS](https://img.shields.io/badge/Travel-OS-AI-purple?style=flat)      | AI travel OS suite.                              |
+| [Teos-Wallet](https://github.com/Elmahrosa/Teos-Wallet)                             |    ![Wallet](https://img.shields.io/badge/Wallet-TEOS-App-blue?style=flat)   | Unified digital wallet for governance & finance. |
+
+---
+
+## 🧩 Utility & Supporting Modules
+
+| Repo                                                                                            |                                      Badge                                     | Description                                 |
+| ----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------: | ------------------------------------------- |
+| [teos_contribution_pool_complete](https://github.com/Elmahrosa/teos_contribution_pool_complete) |    ![Pool](https://img.shields.io/badge/Contribution-Pool-orange?style=flat)   | Full contribution pool implementation.      |
+| [ERT-LAUNCH](https://github.com/Elmahrosa/ERT-LAUNCH)                                           |   ![Launch](https://img.shields.io/badge/Launcher-Toolkit-Orange?style=flat)   | Token launch tooling and ecosystem starter. |
+| [TEOS-NFT-AI-Generator](https://github.com/Elmahrosa/TEOS-NFT-AI-Generator)                     |        ![NFT](https://img.shields.io/badge/NFT-AI-Gen-purple?style=flat)       | NFT minting & AI generation.                |
+| [ElMahrosa-Pi-Smart-City](https://github.com/Elmahrosa/ElMahrosa-Pi-Smart-City)                 | ![SmartCity](https://img.shields.io/badge/SmartCity-Pi-Engine-blue?style=flat) | PI Network smart-city modules.              |
+| [TEOS-AI-Auditor](https://github.com/Elmahrosa/TEOS-AI-Auditor)                                 |    ![AI](https://img.shields.io/badge/AI-Auditor-Security-Green?style=flat)    | AI compliance audit engine.                 |
+| [Teos-Gold-Reserve](https://github.com/Elmahrosa/Teos-Gold-Reserve)                             |    ![Reserve](https://img.shields.io/badge/Reserve-Treasury-Gold?style=flat)   | Treasury & reserve infrastructure.          |
+
+---
+
+## 🚀 Growth & Civic Expansion
+
+| Repo                                                                                              |                                          Badge                                          | Description                                                |
+| ------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------: | ---------------------------------------------------------- |
+| [FPBE-First-Pimisr-Bank-Elmahrosa](https://github.com/Elmahrosa/FPBE-First-Pimisr-Bank-Elmahrosa) |        ![Bank](https://img.shields.io/badge/First-Bank-Elmahrosa-Blue?style=flat)       | Banking services & civic finance modules.                  |
+| [Teospump](https://github.com/Elmahrosa/Teospump)                                                 |        ![Pump](https://img.shields.io/badge/Liquidity-Pump-Engine-Red?style=flat)       | Liquidity & referral engine.                               |
+| [Digital-Reconstruction-of-Gaza](https://github.com/Elmahrosa/Digital-Reconstruction-of-Gaza)     | ![Humanitarian](https://img.shields.io/badge/Humanitarian-Gaza-Rebuild-Teal?style=flat) | Civic reconstruction blueprint for Gaza (Web3 geospatial). |
+| [TeosPitaxi](https://github.com/Elmahrosa/TeosPitaxi)                                             |         ![Taxi](https://img.shields.io/badge/Transport-PiTaxi-Orange?style=flat)        | Pi powered transport network.                              |
+| [Teos-Pi-Smart-City](https://github.com/Elmahrosa/Teos-Pi-Smart-City)                             |       ![SmartCity](https://img.shields.io/badge/SmartCity-Pi-Flag-Blue?style=flat)      | Smart city infrastructure suite.                           |
+| [TeosEgypt-DomainPlatform](https://github.com/Elmahrosa/TeosEgypt-DomainPlatform)                 |       ![Domains](https://img.shields.io/badge/Domain-Platform-Web-Grey?style=flat)      | Civic domain & identity platform.                          |
+| [Elmahrosa-Blockchain](https://github.com/Elmahrosa/Elmahrosa-Blockchain)                         |          ![Chain](https://img.shields.io/badge/Blockchain-Core-Grey?style=flat)         | Shared blockchain utilities.                               |
+| [TEOS-MINER-TELEGRAM-BOT](https://github.com/Elmahrosa/TEOS-MINER-TELEGRAM-BOT)                   |            ![Bot](https://img.shields.io/badge/Telegram-Bot-Green?style=flat)           | Telegram mining & engagement bot.                          |
+| [Nilex](https://github.com/Elmahrosa/Nilex)                                                       |          ![Utility](https://img.shields.io/badge/Utility-Web3-Grey?style=flat)          | Support tooling & utilities.                               |
+| [Elmahrosa-Map-of-PI](https://github.com/Elmahrosa/Elmahrosa-Map-of-PI)                           |              ![Map](https://img.shields.io/badge/Web3-Map-Grey?style=flat)              | Geospatial map of PI services.                             |
+| [Mine_alltokens](https://github.com/Elmahrosa/Mine_alltokens)                                     |        ![Mining](https://img.shields.io/badge/Mining-Aggregator-Grey?style=flat)        | Token mining aggregator.                                   |
+| [demo-repository](https://github.com/Elmahrosa/demo-repository)                                   |             ![Demo](https://img.shields.io/badge/Demo-Repo-Blue?style=flat)             | Showcase demo code.                                        |
 
 ## 🏛 Elmahrosa Organization
 
@@ -174,6 +273,21 @@ This ecosystem is built by a **solo founder**, engineered for national sovereign
 *Scaling Egypt’s blockchain infrastructure worldwide.*
 
 ---
+
+---
+
+## 📬 Contact & Verification
+
+**Founder:** Ayman Seif
+📧 [ayman@teosegypt.com](mailto:ayman@teosegypt.com)
+📱 +20 1006167293
+
+**Solana Wallet:** `Akvm3CbDN448fyD8qmQjowgBGpcYZtjuKFL4xT8PZhbF`
+**TEOS Token Mint:** `AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo`
+
+
+---
+
 
 ### **Every commit is a civic milestone.**
 
