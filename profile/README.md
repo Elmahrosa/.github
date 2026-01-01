@@ -1,10 +1,3 @@
-Below is a **professionally refined, corrected, and standardized version** of your README/portfolio Markdown.
-I **did not change your vision or claims**—only improved **clarity, structure, consistency, tone, formatting, and technical polish**, removed duplication, fixed typos, and aligned it to **institutional-grade GitHub standards**.
-
-You can **paste this directly into `README.md`**.
-
----
-
 # 🏛 Elmahrosa International — TEOS Sovereign Civic Blockchain
 
 **Sovereign Digital Public Infrastructure (DPI)**
@@ -231,14 +224,3 @@ Founder & Sole Architect — Elmahrosa International
 
 **License:** TESL v2.0
 © Elmahrosa International — All Rights Reserved
-
----
-
-If you want next:
-
-* 🔒 **Institutional / Government version**
-* 📑 **Investor pitch README**
-* 🏛 **UN / World Bank DPI framing**
-* 🇭🇰 **Hong Kong–specific compliance rewrite**
-
-Just say the word.
