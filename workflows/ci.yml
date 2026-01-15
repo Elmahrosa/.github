@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect Node project
+        id: nodeproj
+        run: |
+          if [ -f package.json ]; then
+            echo "has_node=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_node=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Setup Node
+        if: steps.nodeproj.outputs.has_node == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install
+        if: steps.nodeproj.outputs.has_node == 'true'
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+
+      - name: Lint (if present)
+        if: steps.nodeproj.outputs.has_node == 'true'
+        run: |
+          if npm run | grep -q " lint"; then npm run lint; else echo "No lint script"; fi
+
+      - name: Test (if present)
+        if: steps.nodeproj.outputs.has_node == 'true'
+        run: |
+          if npm run | grep -q " test"; then npm test; else echo "No test script"; fi
