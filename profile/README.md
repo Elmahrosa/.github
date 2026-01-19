@@ -1,165 +1,141 @@
 # 🏛️ Elmahrosa International  
 ## TEOS — Sovereign Digital Public Infrastructure (DPI)
 
+[![Governance Validation](https://github.com/Elmahrosa/TEOS-FORGE/actions/workflows/forge-ci.yml/badge.svg)](https://github.com/Elmahrosa/TEOS-FORGE/actions/workflows/forge-ci.yml)  
+[![License: TESL v2.0](https://img.shields.io/badge/License-TESL_v2.0-red?style=for-the-badge)](https://github.com/Elmahrosa/Teos-Pharaoh-Portal/blob/main/TESL.md)  
+[![DPI Standards](https://img.shields.io/badge/Standards-World_Bank_Hourglass-blue?style=for-the-badge)](https://id4d.worldbank.org/DPI_workshop)
+
 **A Constitutional-Grade Civic Blockchain for Governments & Institutions**  
-*Identity · Payments · Governance · Smart Cities · Compliance*
+*Identity · Payments · Data Exchange · Smart Cities · Audit-Compliance*
 
 ---
 
 ## 🌍 What Is Elmahrosa?
 
-**Elmahrosa International** is a **Sovereign Software Factory** that designs and deploys  
-**Digital Public Infrastructure (DPI)** for nations.
+**Elmahrosa International** is a **Sovereign Software Factory** that designs and deploys **Digital Public Infrastructure (DPI)** for nations. 
 
-At its core is **TEOS (The Elmahrosa Operating System)** — a **foundational civic blockchain layer** enabling governments to digitize society **without surrendering sovereignty**.
+At its core is **TEOS (The Elmahrosa Operating System)** — a foundational civic blockchain layer enabling governments to digitize society **without surrendering sovereignty**.
 
-> **Built in Egypt. Engineered for Nations. Scaled for the World.**
+> **"Built in Egypt. Engineered for Nations. Scaled for the World."**
 
 ---
 
 ## 🧭 The DPI Hourglass (World Bank Model)
 
-Elmahrosa implements the **DPI Hourglass Architecture** used by the World Bank & GovStack.
+Elmahrosa implements the **DPI Hourglass Architecture**, ensuring a "Narrow Waist" of core standards that support infinite innovation.
 
-```
-
-┌────────────────────────────────────────────┐
-│            NATIONAL APPLICATIONS            │
-│  • Banking & CBDC      • Smart Cities       │
-│  • Mobility            • Humanitarian Aid   │
-│  • Culture & NFTs      • Civic AI           │
-└────────────────────────────────────────────┘
-▲
-│
-┌────────────────────────────────────────────┐
-│        TEOS CORE (THE NARROW WAIST)         │
-│  • Digital Identity (DID)                   │
-│  • Payments & Ledger                        │
-│  • Governance & Compliance                  │
-│  • Audit & Regulator APIs                  │
-└────────────────────────────────────────────┘
-▲
-│
-┌────────────────────────────────────────────┐
-│        NATIONAL INFRASTRUCTURE LAYER        │
-│  • National Law & Constitution              │
-│  • Central Bank Oversight                   │
-│  • Data Residency & Sovereign Hosting       │
-│  • Local Validators & Nodes                 │
-└────────────────────────────────────────────┘
-
-```
-
-**TEOS is the “Narrow Waist”**  
-→ Stable, standardized, sovereign  
-→ Everything above can innovate  
-→ Everything below remains national
+| Layer | Component | Elmahrosa Implementation |
+| :--- | :--- | :--- |
+| **Top (Apps)** | E-Services | `Pi-Smart-City`, `TeosPitaxi`, `Salma-Hospital` |
+| **Waist (Core)** | **DPI Standards** | **Identity (eID), Payments (BankChain), Data (Nilex)** |
+| **Base (Tech)** | Infrastructure | `elmahrosa-core`, Sovereign Mesh, Multi-Chain (SOL/ETH/BTC) |
 
 ---
 
-## 🧠 The Sovereign Mesh (2026)
+## 🧠 The Sovereign Mesh (51-Repo Core)
 
-TEOS is not a single application.  
-It is a **Unified Sovereign Mesh** of **51+ repositories**, constitutionally bound.
+Our organization is orchestrated as a **Unified Sovereign Mesh**. Every repository is linked to the **International Civic Blockchain Constitution**, ensuring that technical execution is always bound by civic law.
 
-```
-
-```
-                ┌─────────────────┐
-                │ elmahrosa-core  │
-                │  (The Hub)      │
-                └────────┬────────┘
-                         │
-    ┌────────────────────┼────────────────────┐
-    │                    │                    │
-```
-
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│ BankChain    │     │ Smart City   │     │ Civic Gaza   │
-│ Finance DPI  │     │ Urban DPI    │     │ Humanitarian │
-└──────┬───────┘     └──────┬───────┘     └──────┬───────┘
-│                    │                    │
-└───────────┬────────┴────────┬──────────┘
-│
-┌─────────────────────────────┐
-│ International Civic          │
-│ Blockchain Constitution     │
-│ (Embedded as Submodule)     │
-└─────────────────────────────┘
-
-```
-
-**Key Principle:**  
-> Code cannot execute outside constitutional, legal, and ethical boundaries.
+* **Recursive Governance:** 51+ repositories synchronized via Git Submodules.  
+* **Audit-Ready DNA:** Standardized `/audit` manifests in every project for regulator transparency.  
+* **Constitutional Integrity:** Logic validated against our global [Civic Ledger](https://github.com/Elmahrosa/International-Civic-Blockchain-Constitution).  
 
 ---
 
-## 🧱 DPI Building Blocks (GovStack-Aligned)
+## 🧱 GovStack Building Blocks
 
-### 🆔 Digital Identity
-- W3C DID–compliant sovereign identity
-- Citizen-controlled credentials
-- Regulator-verifiable
+Elmahrosa repositories are modularized according to **GovStack (ITU/World Bank)** specifications:
 
-### 💳 Payments & Banking
-- **TEOS BankChain**
-- Central-bank aligned rails
-- Asset-backed tokens (e.g. gold)
-
-### 🏛 Governance & Civic Participation
-- Civic Ledger
-- Ask-TEOS-AI (civic interface)
-- Audit-first governance logs
-
-### 🏙 Smart Cities & Mobility
-- Pi Smart City
-- Ride-hailing (TEOS Pi Taxi)
-- National geospatial layers (eMap of Pi)
-
-### 🕊 Humanitarian DPI
-- Digital reconstruction
-- Transparent aid distribution
-- Identity restoration for displaced populations
+* 🆔 **Identity:** W3C-compliant Decentralized Identifiers (DIDs) for secure e-government.  
+* 💳 **Payments:** Regulated, multi-chain financial rails via `BankChain` and `FundsChain`.  
+* 📊 **Registries:** Sovereign data vaults for land, healthcare, and civic records.  
+* 🔗 **Information Mediator:** Secure cross-departmental data exchange (Nilex Engine).  
 
 ---
 
-## ⚖️ Governance & Trust Layer
+## 🚀 Quick Start for Developers
 
-- **License:** TESL v2.0 (Teos Sovereign License)
-- **Audit-Ready:** `/audit` manifests in every repository
-- **Legal Alignment:** Egypt Law 151/2020
-- **Standards:** W3C DID · GovStack · DPI principles
+Install the TEOS Forge CLI:
 
-Governance is **embedded**, not promised.
+```bash
+npm install -g @teos/forge-cli
+```
+
+Initialize a new sovereign project:
+
+```bash
+teos init my-dpi-project --template identity-registry
+```
+
+Validate governance compliance:
+
+```bash
+teos validate
+```
+
+Deploy to testnet:
+
+```bash
+teos deploy --testnet
+```
+
+Export an audit bundle:
+
+```bash
+teos audit --export pdf
+```
+
+> Every project begins governed. No code runs outside constitutional boundaries.
 
 ---
 
-## 📊 Institutional Roadmap
+## 🌐 Global Interoperability
 
-- **Phase I — Completed**  
-  51+ repositories unified under one constitutional mesh
+TEOS-FORGE is designed as a **Universal DPI Factory**, enabling nations and institutions to build sovereign infrastructure that interoperates globally.
 
-- **Phase II — Q1–Q2 2026**  
-  Hong Kong Consensus · Institutional pilots · Mainnet verification
+### Identity
+- W3C Decentralized Identifiers (DIDs)  
+- Verifiable Credentials for cross-border recognition  
+- Zero-Knowledge Proofs for privacy-preserving compliance  
 
-- **Phase III — Q3–Q4 2026**  
-  DPI-as-a-Service for MENA & Africa governments
+### Compliance Plugins
+- Jurisdiction-specific modules (Egypt Law 151, EU GDPR, US HIPAA, India DPDP)  
+- Dual validation: sender + receiver jurisdiction  
+- Automated audit checkpoints injected into smart contracts  
+
+### Value Flows
+- Sovereign Gateways for cross-border settlement (Pi, CBDCs, Ethereum, Polygon)  
+- Certificates of Origin for trade  
+- Machine-readable compliance manifests for UN/WTO systems  
+
+### Localization
+- CLI and documentation fully internationalized (i18n)  
+- Support for Arabic, English, French, and more  
+
+---
+
+## 📊 2026 Strategic Roadmap
+
+- [x] **Phase I: The Great Linking** – All 51 repos unified under the Sovereign Mesh.  
+- [ ] **Phase II: Institutional Pilot (Q1-Q2)** – Hong Kong Consensus & Pi Network Mainnet.  
+- [ ] **Phase III: Continental Scaling (Q3-Q4)** – DPI-as-a-Service for MENA & Africa government blocks.  
 
 ---
 
 ## 👤 Founder & Authority
 
 **Ayman Seif**  
-Founder & Sole Architect — Elmahrosa International  
+Founder & Chief Architect — Elmahrosa International  
 
-📧 ayman@teosegypt.com  
-🌐 https://www.teosegypt.com  
-📄 https://whitepaper.teosegypt.com  
+📧 [ayman@teosegypt.com](mailto:ayman@teosegypt.com)  
+🌐 [teosegypt.com](https://www.teosegypt.com)  
+📄 [Whitepaper](https://whitepaper.teosegypt.com)  
+
+📩 Institutions seeking sovereign DPI pilots may contact Elmahrosa International for licensing and integration.
 
 ---
 
 > **Every commit is a civic milestone.**  
 > **Nations own their code. Citizens own their data.**
 
-© Elmahrosa International
-```
+© 2026 Elmahrosa International
