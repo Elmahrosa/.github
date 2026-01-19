@@ -1,0 +1,10 @@
+﻿{
+    "status":  "development",
+    "governance":  {
+                       "framework":  "TEOS-FORGE-GLOBAL",
+                       "compliance_standard":  "Universal-DPI"
+                   },
+    "project":  ".github",
+    "version":  "1.0.0",
+    "organization":  "Elmahrosa"
+}
