@@ -30,7 +30,7 @@ Elmahrosa implements the **World Bank DPI Hourglass Model**, ensuring a "Narrow 
 Our organization is orchestrated as a **Unified Sovereign Mesh**. 
 Every repository is linked to the **International Civic Blockchain Constitution (ICBC)**, ensuring technical execution is always bound by civic law.
 
-**38+ Classified Repositories** | Visibility: `Private` | Archival: `False`
+**36+ Classified Repositories** | Visibility: `Private` | Archival: `False`
 
 *   **Recursive Governance:** All projects synchronized via Git Submodules.
 *   **Audit-Ready DNA:** Standardized `/audit` manifests in every project.
