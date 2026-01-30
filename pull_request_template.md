@@ -1,18 +1,42 @@
+# Contribution Proposal — Elmahrosa Organization
+
 ## Summary
-What does this PR change?
+Describe the proposed change.
 
-## Motivation
-Why is this needed?
+---
 
-## Risk
-- [ ] Low
-- [ ] Medium
-- [ ] High
+## Repository Scope
+- [ ] Constitution
+- [ ] Governance
+- [ ] Core / Kernel
+- [ ] API / SDK
+- [ ] Documentation
 
-## Testing
-How was this tested?
+---
+
+## Authority Confirmation
+
+- [ ] This change does NOT claim sovereignty
+- [ ] This change does NOT bypass governance
+- [ ] This change respects ICBC and TESL
+
+---
+
+## Risk Assessment
+- Impact level: Low / Medium / High
+- Affected systems:
+- Rollback considerations:
+
+---
 
 ## Checklist
-- [ ] No secrets committed
-- [ ] Docs updated if needed
-- [ ] CI passes locally or via GitHub Actions
+
+- [ ] No authority claims added
+- [ ] No execution logic without validation
+- [ ] CI passes
+- [ ] Documentation updated
+
+---
+
+## Sign-off
+I understand that Elmahrosa International retains final authority.
