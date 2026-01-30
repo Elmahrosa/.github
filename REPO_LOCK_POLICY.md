@@ -94,3 +94,43 @@ All repos must support verification using:
 ```bash
 git ls-files
 sha256sum <locked file>
+````
+
+For initial locking:
+
+1. Create `REPO_LOCK.md` with placeholders
+2. Compute hashes for each locked file
+3. Insert hashes + lock date
+4. Commit with **signed commit**
+5. Push to `main`
+
+Signed commits are mandatory for all changes to Root-of-Trust.
+
+---
+
+## 6) Enforcement Rules (Non-Negotiable)
+
+* No PR may merge without CODEOWNER approval
+* No change to Root-of-Trust without hash registry update
+* Any fork or derivative claiming sovereign authority is invalid under TESL
+* CI must fail if required files are missing
+
+---
+
+## 7) Canonical Authority Chain Reference
+
+All repos must reference the chain:
+
+ICBC → TEOS-FORGE → TEOS-Governance → Elmahrosa-Core → Execution / API
+
+Execution never creates authority.
+
+---
+
+## 8) Contact
+
+**Authority:** Elmahrosa International
+📧 [ayman@teosegypt.com](mailto:ayman@teosegypt.com)
+
+
+```
