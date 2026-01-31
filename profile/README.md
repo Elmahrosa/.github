@@ -9,7 +9,7 @@
 [![Status: Active](https://img.shields.io/badge/Status-Risk_Contained-green)](https://github.com/Elmahrosa)
 
 **“The Operating System for Nation-States.”**
-
+# Governed by the International Civic Blockchain Constitution (ICBC).
 *Identity · Payments · Registries · Data Exchange · Smart Cities · Audit & Compliance*
 
 </div>
