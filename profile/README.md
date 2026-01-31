@@ -2,7 +2,7 @@
 
 # 🏛️ Elmahrosa International
 
-## **TEOS — Sovereign Digital Public Infrastructure (DPI)**
+# TEOS — Constitution-First Sovereign Digital Public Infrastructure (DPI)
 
 [![Standards: GovStack](https://img.shields.io/badge/Standards-GovStack_Ready-blue)](https://www.govstack.global)
 [![License: TESL v2.0](https://img.shields.io/badge/License-TESL_v2.0-red)](https://github.com/Elmahrosa/International-Civic-Blockchain-Constitution)
