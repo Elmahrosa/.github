@@ -1,79 +1,80 @@
-# Organization Security Policy — Elmahrosa International
+# 🔐 Security Policy — Elmahrosa International / TEOS
+
+## Purpose
+
+This document defines the **security, vulnerability disclosure, and incident handling policy**
+for all repositories governed under **Elmahrosa International** and the **TEOS Sovereign Framework**.
+
+Security is treated as a **civic obligation**, not a best-effort practice.
+
+---
 
 ## Scope
 
-This security policy applies to **all repositories, systems, and deployments**
-under the Elmahrosa GitHub organization, including but not limited to:
+This policy applies to:
 
-- Governance repositories
-- Execution kernels
-- API & SDK gateways
-- Compliance and audit tooling
-- Documentation and manifests
+- All public and private repositories under the Elmahrosa organization
+- All TEOS-governed infrastructure components
+- All constitutional, governance, and execution-layer code
 
-Security is treated as a **sovereign and institutional obligation**, not a best-effort practice.
+---
+
+## Supported Repositories
+
+| Repository Type | Status |
+|---|---|
+| Constitutional & Governance Repos | Actively Supported |
+| Reference Implementations | Actively Supported |
+| Archived Repositories | Read-only |
 
 ---
 
 ## Reporting a Vulnerability
 
-If you discover a security issue related to:
+If you discover a security vulnerability:
 
-- Governance integrity
-- Execution safety
-- API access control
-- Authentication or authorization
-- Audit evidence or logging
-- Boundary escape or misuse
-- CI/CD or supply-chain risks
+**DO NOT** open a public issue.
 
-**DO NOT** open a public GitHub issue.
+Instead, report privately via:
 
----
+📧 **security@teosegypt.com**
 
-## Responsible Disclosure (Required)
-
-Please report security issues privately to:
-
-📧 **security@teosegypt.com**  
-📧 **ayman@teosegypt.com**
-
-Your report should include:
-- Clear description of the issue
-- Affected repository or system
-- Reproduction steps (if safe)
-- Potential impact assessment
+Please include:
+- Repository name
+- Commit hash or release tag
+- Description of the issue
+- Potential impact assessment (if known)
 
 ---
 
-## Response & Handling
+## Disclosure Process
 
-- **Acknowledgement:** within 72 hours  
-- **Initial assessment:** within 7 days  
-- **Resolution:** governed by TEOS-FORGE under ICBC authority
-
-Severity, disclosure timing, and remediation are handled
-according to constitutional governance rules.
+1. **Acknowledgement** within 72 hours  
+2. **Assessment & classification** (severity, scope)
+3. **Mitigation or patch** under constitutional constraints
+4. **Coordinated disclosure** if required
 
 ---
 
-## Disclosure Rules
+## Governance & Authority
 
-- No public disclosure without explicit approval
-- No exploit publication
-- No proof-of-concept sharing outside approved channels
+All security decisions are bound by:
 
-Violations may be treated as a breach of sovereign safeguards.
+- International Civic Blockchain Constitution (ICBC)
+- TEOS Governance Rules
+- TESL v2.0 License constraints
+
+> No security fix may violate constitutional authority or lawful governance.
 
 ---
 
-## Governance Authority
+## Compliance Note
 
-All security handling is subject to:
+This policy aligns with:
+- GovStack security expectations
+- ISO/IEC 27001 principles
+- Sovereign DPI risk frameworks
 
-- **International Civic Blockchain Constitution (ICBC)**
-- **TEOS-FORGE governance stewardship**
-- **TEOS Egypt Sovereign License (TESL)**
+---
 
-Security is not discretionary.  
-It is **constitutionally enforced**.
+© Elmahrosa International
