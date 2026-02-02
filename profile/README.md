@@ -87,6 +87,8 @@ Founder & Chief Architect
 ---
 
 > **Every commit is a civic milestone.**
+> 
 > **Nations own their code. Citizens own their data.**
+> 
 © 2026 Elmahrosa International
 ```
