@@ -1,57 +1,91 @@
-﻿![TEOS Sovereign Standing](https://img.shields.io/badge/Standing-Sovereign%20Original%20%E2%80%94%20Elmahrosa%20International-blue?style=for-the-badge)
-[![License: TESL](https://img.shields.io/badge/License-TESL%20%2B%20PolyForm%20Noncommercial-green?style=for-the-badge)](https://github.com/Elmahrosa/Teos-Pharaoh-Portal/blob/main/TESL.md)
+<div align="center">
 
-# 📍 Repo Standing Statement
+# 🏛️ Elmahrosa International
 
-This repository is a **sovereign original** under **Elmahrosa International — TEOS Egypt**.  
-Governance is anchored in [TEOS-FORGE](https://github.com/Elmahrosa/TEOS-FORGE).  
-Commercial use requires written approval from Elmahrosa International.  
+# TEOS — Constitution-First Sovereign Digital Public Infrastructure (DPI)
 
-⚖️ Protected under dual license: PolyForm Noncommercial + TEOS Egypt Sovereign License (TESL).
+[![Standards: GovStack](https://img.shields.io/badge/Standards-GovStack_Aligned-blue)](https://github.com/Elmahrosa/Teos-International-Civic-Blockchain-Constitution/blob/main/docs/compliance/govstack-mapping.yaml)
+[![License: TESL v2.0](https://img.shields.io/badge/License-TESL_v2.0-red)](https://github.com/Elmahrosa/Teos-International-Civic-Blockchain-Constitution)
+[![Status: Active](https://img.shields.io/badge/Status-Institutional_Pilot-green)](https://github.com/Elmahrosa)
 
-# 📍 Repo Standing Statement
+**“The Operating System for Nation-States.”**  
+_Governed by the International Civic Blockchain Constitution (ICBC)_  
+*Identity · Payments · Registries · Data Exchange · Smart Cities · Audit & Compliance*
 
-This repository is a **sovereign original** under **Elmahrosa International — TEOS Egypt**.  
-Governance is anchored in [TEOS-FORGE](https://github.com/Elmahrosa/TEOS-FORGE).  
-Commercial use requires written approval from Elmahrosa International.  
-
-⚖️ Protected under dual license: PolyForm Noncommercial + TEOS Egypt Sovereign License (TESL).
-
-# ?? Repo Standing Statement
-
-This repository is a **sovereign original** under **Elmahrosa International � TEOS Egypt**.  
-Governance is anchored in [TEOS-FORGE](https://github.com/Elmahrosa/TEOS-FORGE).  
-Commercial use requires written approval from Elmahrosa International.  
-
-?? Protected under dual license: PolyForm Noncommercial + TEOS Egypt Sovereign License (TESL).
-
-# 🏛 Elmahrosa International — TEOS Sovereign Civic Blockchain
-
-**Sovereign Digital Public Infrastructure (DPI)**
-**Built for Governments, Central Banks & Global Institutions**
-
-**Multi-Chain · Audit-Ready · Regulator-Aligned · DPI-Certified**
-
-[![Build](https://img.shields.io/github/actions/workflow/status/Elmahrosa/.github/ci.yml?branch=main\&style=for-the-badge\&logo=github)](https://github.com/Elmahrosa)
-[![Coverage](https://img.shields.io/badge/Coverage-Target_90%25-yellow?style=for-the-badge\&logo=jest)](https://github.com/Elmahrosa)
-[![Security](https://img.shields.io/badge/Security-Sovereign_Grade-critical?style=for-the-badge\&logo=shield)](https://github.com/Elmahrosa/El-Mahrosa.Teos-Sovereign-System/blob/main/SECURITY.md)
-[![License](https://img.shields.io/badge/License-TESL_v2.0_%26_PolyForm-red?style=for-the-badge\&logo=law)](https://github.com/Elmahrosa/El-Mahrosa.Teos-Sovereign-System/blob/main/LICENSE)
-[![Interoperability](https://img.shields.io/badge/Interoperability-Multi_Chain-blue?style=for-the-badge\&logo=ethereum)](https://github.com/Elmahrosa)
-[![Founder](https://img.shields.io/badge/Built_By-Ayman_Seif-black?style=for-the-badge\&logo=solana)](https://linkedin.com/in/aymanseif)
-
-[![Whitepaper](https://img.shields.io/badge/Whitepaper-Read-orange?style=for-the-badge\&logo=document)](https://whitepaper.teosegypt.com/)
-[![BankChain](https://img.shields.io/badge/BankChain-Live-blue?style=for-the-badge\&logo=ethereum)](https://bankchain.teosegypt.com/)
-[![Smart City](https://img.shields.io/badge/Smart_City-Explore-green?style=for-the-badge\&logo=city)](https://smartcity.teosegypt.com/)
-[![Wallet](https://img.shields.io/badge/TEOS_Wallet-Open-purple?style=for-the-badge\&logo=wallet)](https://wallet1.teosegypt.com/)
-[![Nilex DEX](https://img.shields.io/badge/Nilex_DEX-Trade-yellow?style=for-the-badge\&logo=binance)](https://nilex.teosegypt.com/)
-
-**Public Repositories:** [43+](https://github.com/orgs/Elmahrosa/repositories)
-**Followers:** ![GitHub Followers](https://img.shields.io/github/followers/Elmahrosa?style=social)
+</div>
 
 ---
 
-## 🔗 Integration Summary
-This repository is part of the **Elmahrosa Sovereign Stack**.  
-Governance is anchored in **TEOS-FORGE**, with integrations across Bankchain, ERT-LAUNCH, FPBE, and other civic modules.  
-See full details in [docs/integrations.md](https://github.com/Elmahrosa/TEOS-FORGE/blob/main/docs/integrations.md).
+## 🌍 Overview
 
+**TEOS** is an Egypt-originated, constitution-first framework for building  
+**sovereign Digital Public Infrastructure (DPI)**.
+
+Designed for **national governments, regulators, and international financial institutions (IFIs)**,
+TEOS enforces:
+
+- **Law over code**
+- **Human authority over automation**
+- **Cryptography as enforcement, not symbolism**
+- **Auditability by default**
+
+All systems are anchored in the **International Civic Blockchain Constitution (ICBC)**
+and governed through non-forkable sovereign standards under the **TESL license**.
+
+---
+
+## 🪙 TEOS Token (Civic Status)
+
+TEOS is a **non-tradable civic access token** used exclusively for
+eligibility signaling and constitutional pilot participation.
+
+- **Network:** Solana
+- **Market Activity:** Intentionally disabled
+
+TEOS **does not represent equity, investment, yield, or financial value**.
+
+---
+
+## 🧪 Active Constitutional Pilot
+
+**Effective Period:** 2026
+**Scope:** Non-commercial · Non-tradable · Non-speculative
+
+**Objective:**
+Validate the **institutional, legal, and civic effectiveness** of a constitution-first
+blockchain-based Digital Public Infrastructure model.
+
+---
+
+## 🧱 Repository Inventory
+
+| Repository | Function | Status |
+| :--- | :--- | :--- |
+| **[ICBC Constitution](Teos-International-Civic-Blockchain-Constitution)** | Supreme Charter & Root of Trust | ✅ Locked |
+| **[Elmahrosa Core](Elmahrosa-Core)** | Central Governance Engine | ✅ Active |
+| **[TEOS FORGE](TEOS-FORGE)** | DPI Integration Toolkit | ✅ Active |
+| **[TEOS API Sovereign](TEOS-API-Sovereign)** | Sovereign Developer SDK | ✅ Public |
+| **[TEOS Governance](TEOS-Governance)** | Executable Governance Logic | ✅ Active |
+| **[Sovereign Stack 2026](TEOS-Egypt-SovereignStack-2026)** | National Pilot Architecture | 🚧 In Progress |
+| **[Pharaoh Portal](Teos-Pharaoh-Portal)** | Civic Access Gateway | ✅ Active |
+
+> View the full inventory on the [Organization Tab](https://github.com/Elmahrosa?tab=repositories).
+
+---
+
+## 🏛️ Stewardship & Contact
+
+**Elmahrosa International**
+Founded in Egypt · Operating since 2007
+
+**Ayman Seif**
+Founder & Chief Architect
+
+📧 [ayman@teosegypt.com](mailto:ayman@teosegypt.com)
+🌐 [https://teosegypt.com](https://teosegypt.com)
+
+---
+
+> **Every commit is a civic milestone.**
+> **Nations own their code. Citizens own their data.**
+© 2026 Elmahrosa International
