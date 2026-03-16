@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safe Ingestion Engine — Compliance-First Web Data Ingestion</title>
+  <meta name="description" content="Compliance-first web data ingestion for AI agents and regulated data pipelines. PII redaction, SSRF protection, robots.txt enforcement, YAML policy rules, async processing, and content hashing." />
+  <meta name="theme-color" content="#07111f" />
+
+  <meta property="og:title" content="Safe Ingestion Engine" />
+  <meta property="og:description" content="Compliance-first web data ingestion for AI agents and regulated data pipelines." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://elmahrosa.github.io/safe-ingestion-engine/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#030712;
+      --panel:#081121;
+      --panel-2:#0c172a;
+      --line:#1d2c45;
+      --text:#e5eefb;
+      --muted:#8fa4c2;
+      --brand:#22c55e;
+      --brand-2:#16a34a;
+      --accent:#38bdf8;
+      --warning:#f59e0b;
+      --danger:#ef4444;
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1120px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Inter",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(34,197,94,.10), transparent 25%),
+        radial-gradient(circle at top right, rgba(56,189,248,.10), transparent 25%),
+        linear-gradient(180deg, #020611 0%, #050c18 100%);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max), calc(100% - 32px));margin:0 auto}
+
+    .nav{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter:blur(12px);
+      background:rgba(3,7,18,.78);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:-.02em;
+    }
+    .brand-mark{
+      width:40px;height:40px;border-radius:12px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, #14532d, #22c55e);
+      box-shadow:0 10px 30px rgba(34,197,94,.25);
+      font-size:20px;
+    }
+    .brand small{
+      display:block; color:var(--muted); font-size:12px; font-weight:600; letter-spacing:.02em;
+    }
+    .nav-links{
+      display:flex; gap:18px; align-items:center; flex-wrap:wrap;
+      color:var(--muted); font-size:14px; font-weight:600;
+    }
+    .nav-links a:hover{color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; padding:13px 18px; border-radius:14px;
+      font-weight:700; font-size:14px; transition:.18s ease;
+      border:1px solid transparent; cursor:pointer;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--brand),var(--brand-2));
+      color:white;
+      box-shadow:0 14px 30px rgba(34,197,94,.22);
+    }
+    .btn-secondary{
+      background:rgba(56,189,248,.08);
+      border-color:rgba(56,189,248,.25);
+      color:#cceeff;
+    }
+    .btn-dark{
+      background:rgba(255,255,255,.03);
+      border-color:rgba(255,255,255,.08);
+      color:var(--text);
+    }
+
+    .hero{
+      padding:72px 0 44px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:32px;
+      align-items:center;
+    }
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px;
+      background:rgba(34,197,94,.08);
+      border:1px solid rgba(34,197,94,.22);
+      color:#b7f7cb; font-size:13px; font-weight:700;
+      margin-bottom:18px;
+    }
+    h1{
+      margin:0 0 14px;
+      font-size:clamp(34px, 5vw, 58px);
+      line-height:1.03;
+      letter-spacing:-.035em;
+    }
+    .hero p{
+      margin:0 0 18px;
+      font-size:18px;
+      color:#c7d5ea;
+      max-width:760px;
+    }
+    .hero-actions{
+      display:flex; gap:12px; flex-wrap:wrap; margin:24px 0 18px;
+    }
+    .hero-proof{
+      display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.03);
+      padding:10px 12px; border-radius:999px;
+      color:var(--muted); font-size:13px; font-weight:700;
+    }
+
+    .hero-card,
+    .card{
+      background:linear-gradient(180deg, rgba(10,20,38,.95), rgba(8,17,33,.95));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+
+    .score-card{
+      padding:20px;
+    }
+    .score-top{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; margin-bottom:12px;
+    }
+    .score-badge{
+      font-size:46px; font-weight:800; letter-spacing:-.04em; line-height:1;
+      color:#86efac;
+    }
+    .score-card h3{
+      margin:0; font-size:18px;
+    }
+    .muted{color:var(--muted)}
+    .mono{font-family:"JetBrains Mono", monospace}
+    .stat-list{
+      display:grid; gap:10px; margin-top:16px;
+    }
+    .stat{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:12px 14px;
+      background:rgba(255,255,255,.025);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:14px;
+      font-size:14px;
+    }
+    .stat strong{color:#d9fbe5}
+
+    section{
+      padding:22px 0;
+    }
+    .section-head{
+      display:flex; align-items:end; justify-content:space-between;
+      gap:20px; margin-bottom:18px;
+    }
+    .section-head h2{
+      margin:0;
+      font-size:clamp(26px,3.3vw,38px);
+      line-height:1.1;
+      letter-spacing:-.03em;
+    }
+    .section-head p{
+      margin:8px 0 0; color:var(--muted); max-width:740px;
+    }
+
+    .grid-3{
+      display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;
+    }
+    .grid-2{
+      display:grid; grid-template-columns:repeat(2, 1fr); gap:18px;
+    }
+
+    .feature{
+      padding:20px;
+    }
+    .feature-icon{
+      width:44px;height:44px;border-radius:14px;
+      display:grid;place-items:center;
+      background:rgba(34,197,94,.10);
+      color:#a7f3d0;
+      border:1px solid rgba(34,197,94,.2);
+      font-size:20px;
+      margin-bottom:14px;
+    }
+    .feature h3{
+      margin:0 0 8px; font-size:18px;
+    }
+    .feature p{
+      margin:0; color:var(--muted); font-size:15px;
+    }
+
+    .code-box{
+      padding:18px;
+      overflow:auto;
+    }
+    pre{
+      margin:0;
+      white-space:pre-wrap;
+      word-break:break-word;
+      font:14px/1.6 "JetBrains Mono", monospace;
+      color:#d8e8ff;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      overflow:hidden;
+      border-radius:16px;
+      background:linear-gradient(180deg, rgba(10,20,38,.95), rgba(8,17,33,.95));
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow:var(--shadow);
+    }
+    th, td{
+      padding:14px 16px;
+      text-align:left;
+      border-bottom:1px solid rgba(255,255,255,.07);
+      vertical-align:top;
+    }
+    th{
+      color:#d7e9ff;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      background:rgba(255,255,255,.03);
+    }
+    td{color:#c9d8ee; font-size:15px}
+    tr:last-child td{border-bottom:none}
+
+    .pricing-wrap{
+      display:grid; grid-template-columns:repeat(4, 1fr); gap:18px;
+    }
+    .price-card{
+      padding:20px;
+      position:relative;
+    }
+    .price-card.featured{
+      border-color:rgba(34,197,94,.4);
+      box-shadow:0 20px 60px rgba(34,197,94,.14);
+    }
+    .price-card h3{
+      margin:0 0 8px; font-size:20px;
+    }
+    .price{
+      font-size:38px; font-weight:800; letter-spacing:-.04em; line-height:1;
+      margin:10px 0 8px;
+    }
+    .price small{
+      font-size:14px; color:var(--muted); font-weight:600;
+    }
+    .price-list{
+      margin:16px 0 18px;
+      padding:0; list-style:none;
+      display:grid; gap:10px;
+    }
+    .price-list li{
+      color:#d1def2;
+      font-size:14px;
+      padding-left:22px;
+      position:relative;
+    }
+    .price-list li::before{
+      content:"✓";
+      position:absolute; left:0; top:0;
+      color:#86efac; font-weight:800;
+    }
+    .tag{
+      display:inline-block;
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      color:#c7f9d6;
+      background:rgba(34,197,94,.1);
+      border:1px solid rgba(34,197,94,.24);
+      margin-bottom:10px;
+    }
+
+    .cta{
+      padding:26px;
+      display:grid; grid-template-columns:1.15fr .85fr; gap:24px; align-items:center;
+    }
+    .cta h2{margin:0 0 10px; font-size:34px; line-height:1.05; letter-spacing:-.03em}
+    .cta p{margin:0; color:var(--muted)}
+    .cta-actions{
+      display:flex; gap:12px; flex-wrap:wrap; justify-content:flex-end;
+    }
+
+    .footer{
+      padding:34px 0 56px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .footer-card{
+      padding:20px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .notice{
+      margin-top:12px;
+      padding:12px 14px;
+      border-radius:14px;
+      background:rgba(245,158,11,.10);
+      border:1px solid rgba(245,158,11,.22);
+      color:#fde7b0;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .small{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    @media (max-width: 980px){
+      .hero-grid,.cta,.grid-3,.grid-2,.pricing-wrap{
+        grid-template-columns:1fr;
+      }
+      .cta-actions{justify-content:flex-start}
+      .nav-links{display:none}
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <div class="brand-mark">🛡</div>
+        <div>
+          Safe Ingestion Engine
+          <small>Compliance-first web data ingestion</small>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#trial">Free Trial</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="btn btn-primary" href="#trial">Get 5 Free URLs</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">✅ v3.0.1 live · 29/29 tests passing</div>
+        <h1>Compliance-first web data ingestion for AI agents and regulated pipelines.</h1>
+        <p>
+          Safe Ingestion Engine is a secure ingestion gateway that adds <strong>PII redaction</strong>,
+          <strong>SSRF protection</strong>, <strong>robots.txt enforcement</strong>, <strong>YAML policy rules</strong>,
+          <strong>async processing</strong>, and <strong>content hashing</strong> before data reaches your application.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#trial">Start Free — 5 URLs</a>
+          <a class="btn btn-secondary" href="#pricing">View Pricing</a>
+          <a class="btn btn-dark" href="https://github.com/Elmahrosa/safe-ingestion-engine" target="_blank" rel="noopener">View GitHub</a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="pill">🧪 29 tests passing</div>
+          <div class="pill">🔒 SSRF-aware fetch protection</div>
+          <div class="pill">🧾 Audit-friendly pipeline</div>
+          <div class="pill">🤖 AI / agent-ready architecture</div>
+        </div>
+
+        <div class="notice">
+          Start with <strong>5 free URLs</strong>. No card required. Valid key required for API access.
+          <br />
+          <span class="small">401 = missing/invalid API key · 402 = valid key but out of credits.</span>
+        </div>
+      </div>
+
+      <div class="hero-card score-card">
+        <div class="score-top">
+          <div>
+            <h3>Engineering Maturity</h3>
+            <div class="muted small">Security-focused MVP with meaningful hardening and public proof.</div>
+          </div>
+          <div class="score-badge">8.5</div>
+        </div>
+
+        <div class="stat-list">
+          <div class="stat">
+            <span>Independent security audits</span>
+            <strong>3 completed</strong>
+          </div>
+          <div class="stat">
+            <span>Issues patched</span>
+            <strong>30 fixed</strong>
+          </div>
+          <div class="stat">
+            <span>Tests</span>
+            <strong>29 / 29 passing</strong>
+          </div>
+          <div class="stat">
+            <span>Release</span>
+            <strong class="mono">v3.0.1</strong>
+          </div>
+          <div class="stat">
+            <span>Primary delivery model</span>
+            <strong>Hosted API + license</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Why teams use Safe Ingestion Engine</h2>
+          <p>
+            Traditional scrapers fetch first and leave compliance to your application.
+            Safe Ingestion Engine enforces governance before data reaches your system.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card feature">
+          <div class="feature-icon">🛡</div>
+          <h3>SSRF Protection</h3>
+          <p>Blocks private, loopback, link-local, multicast, and reserved destinations before outbound fetches.</p>
+        </div>
+
+        <div class="card feature">
+          <div class="feature-icon">🧼</div>
+          <h3>PII Redaction</h3>
+          <p>Scrubs common sensitive data before persistence or delivery, helping reduce compliance risk.</p>
+        </div>
+
+        <div class="card feature">
+          <div class="feature-icon">📜</div>
+          <h3>robots.txt Enforcement</h3>
+          <p>Applies structural checks before fetches, rather than treating compliance as an afterthought.</p>
+        </div>
+
+        <div class="card feature">
+          <div class="feature-icon">⚙️</div>
+          <h3>YAML Policy Engine</h3>
+          <p>Supports per-domain rules, path controls, budgets, and domain-level governance behavior.</p>
+        </div>
+
+        <div class="card feature">
+          <div class="feature-icon">🔁</div>
+          <h3>Async Processing</h3>
+          <p>FastAPI + queue + worker architecture supports non-blocking ingestion and cleaner scaling.</p>
+        </div>
+
+        <div class="card feature">
+          <div class="feature-icon">#</div>
+          <h3>Content Hashing</h3>
+          <p>Enables deduplication, provenance support, and fingerprinting for downstream AI or analytics workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="architecture">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>How the pipeline works</h2>
+          <p>A lightweight architecture designed for secure ingestion, audit visibility, and AI-friendly output.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card code-box">
+<pre>Client / AI Agent
+        ↓
+API Layer
+        ↓
+Auth + Credit Check
+        ↓
+Policy Engine
+        ↓
+Safe Fetcher
+        ↓
+PII Scrubber
+        ↓
+Async Queue / Workers
+        ↓
+Storage / Result Output
+        ↓
+AI Pipeline / Analytics / Apps</pre>
+        </div>
+
+        <div class="card code-box">
+<pre>Typical API behavior
+
+401 Unauthorized
+→ missing or invalid API key
+
+402 Payment Required
+→ valid API key, but no credits left
+
+Free Trial
+→ 5 URLs included
+→ instant API key
+→ no card required</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="use-cases">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Best use cases</h2>
+          <p>Safe Ingestion Engine is a stronger fit for controlled ingestion than generic scraping.</p>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Use Case</th>
+            <th>How it Helps</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AI data ingestion</td>
+            <td>Collect external content with cleaner controls before it enters RAG, indexing, or model pipelines.</td>
+          </tr>
+          <tr>
+            <td>Compliance-sensitive scraping</td>
+            <td>Add policy enforcement and redaction before data reaches downstream systems.</td>
+          </tr>
+          <tr>
+            <td>Enterprise ingestion gateways</td>
+            <td>Use as a controlled boundary between external web sources and internal analytics or automation.</td>
+          </tr>
+          <tr>
+            <td>Security research / OSINT</td>
+            <td>Reduce exposure to unsafe fetch paths and improve audit visibility for collected material.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Simple pricing</h2>
+          <p>Start free, then move to paid credits, setup help, or a self-hosted license when needed.</p>
+        </div>
+      </div>
+
+      <div class="pricing-wrap">
+        <div class="card price-card">
+          <div class="tag">Free Trial</div>
+          <h3>Starter</h3>
+          <div class="price">$0 <small>/ one-time trial</small></div>
+          <ul class="price-list">
+            <li>5 free URLs</li>
+            <li>Instant API key</li>
+            <li>48-hour access window</li>
+            <li>No card required</li>
+          </ul>
+          <a class="btn btn-primary" href="#trial">Get Free Key</a>
+        </div>
+
+        <div class="card price-card featured">
+          <div class="tag">Most Practical</div>
+          <h3>Developer</h3>
+          <div class="price">$10 <small>/ starter credits</small></div>
+          <ul class="price-list">
+            <li>50 URLs</li>
+            <li>PayPal accepted</li>
+            <li>USDC on Base optional</li>
+            <li>Email support</li>
+          </ul>
+          <a class="btn btn-primary" href="mailto:teosegypt@gmail.com?subject=Safe%20Ingestion%20Engine%20-%20Developer%20Plan">Buy via Email</a>
+        </div>
+
+        <div class="card price-card">
+          <div class="tag">Growing Teams</div>
+          <h3>Growth</h3>
+          <div class="price">$29 <small>/ monthly</small></div>
+          <ul class="price-list">
+            <li>300 URLs</li>
+            <li>Priority provisioning</li>
+            <li>PayPal or Base</li>
+            <li>Good for evaluation teams</li>
+          </ul>
+          <a class="btn btn-dark" href="mailto:teosegypt@gmail.com?subject=Safe%20Ingestion%20Engine%20-%20Growth%20Plan">Request Access</a>
+        </div>
+
+        <div class="card price-card">
+          <div class="tag">License / Setup</div>
+          <h3>Enterprise</h3>
+          <div class="price">Contact <small>/ custom</small></div>
+          <ul class="price-list">
+            <li>Self-hosted deployment</li>
+            <li>White-label discussions</li>
+            <li>Integration support</li>
+            <li>Licensing / acquisition talks</li>
+          </ul>
+          <a class="btn btn-dark" href="mailto:teosegypt@gmail.com?subject=Safe%20Ingestion%20Engine%20-%20License%20or%20Acquisition">Contact</a>
+        </div>
+      </div>
+
+      <div class="notice" style="margin-top:18px">
+        <strong>Payment advice:</strong> lead with <strong>PayPal</strong> for normal buyers, keep <strong>USDC on Base</strong> as an optional second path.
+        That gives you less friction and more conversions.
+      </div>
+    </div>
+  </section>
+
+  <section id="trial">
+    <div class="container">
+      <div class="card cta">
+        <div>
+          <h2>Start with 5 free URLs</h2>
+          <p>
+            Best trial message for users: <strong>“Get an instant API key with 5 free URLs. No card required.”</strong>
+            <br /><br />
+            Until your automated signup is ready, send users to your email and manually provision trial keys.
+            This is acceptable for early sales and validation.
+          </p>
+          <div class="notice">
+            Recommended temporary workflow:
+            user emails you → you issue trial key → user tests 5 URLs → upgrade with PayPal or USDC on Base.
+          </div>
+        </div>
+
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="mailto:teosegypt@gmail.com?subject=Safe%20Ingestion%20Engine%20-%205%20Free%20URLs&body=Hello,%0A%0AI%20want%20a%20free%20trial%20API%20key%20with%205%20URLs.%0A%0AName:%0AUse%20case:%0A%0AThanks.">Get Free Trial</a>
+          <a class="btn btn-secondary" href="mailto:elma7rosa@gmx.com?subject=Safe%20Ingestion%20Engine%20-%20PayPal%20Purchase">Pay with PayPal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Contact & payment details</h2>
+          <p>Use one simple contact path for now and keep the buying flow easy.</p>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Current Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Primary contact email</td>
+            <td><a href="mailto:teosegypt@gmail.com">teosegypt@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td>PayPal email</td>
+            <td><a href="mailto:elma7rosa@gmx.com">elma7rosa@gmx.com</a></td>
+          </tr>
+          <tr>
+            <td>GitHub repo</td>
+            <td><a href="https://github.com/Elmahrosa/safe-ingestion-engine" target="_blank" rel="noopener">github.com/Elmahrosa/safe-ingestion-engine</a></td>
+          </tr>
+          <tr>
+            <td>Public website</td>
+            <td><a href="https://elmahrosa.github.io/safe-ingestion-engine/" target="_blank" rel="noopener">elmahrosa.github.io/safe-ingestion-engine</a></td>
+          </tr>
+          <tr>
+            <td>Best short sales offer</td>
+            <td>5 free URLs → then paid credits → then setup or self-hosted license</td>
+          </tr>
+          <tr>
+            <td>Acquisition messaging</td>
+            <td>Keep private. Use “Open to licensing, integration, and acquisition discussions.”</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="card footer-card">
+        <div>
+          <strong>Safe Ingestion Engine</strong><br />
+          <span class="small">Compliance-first web data ingestion for AI agents and regulated pipelines.</span>
+        </div>
+
+        <div class="small">
+          © 2026 Safe Ingestion Engine ·
+          <a href="mailto:teosegypt@gmail.com">teosegypt@gmail.com</a> ·
+          PayPal: <a href="mailto:elma7rosa@gmx.com">elma7rosa@gmx.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
