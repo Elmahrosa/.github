@@ -1,3 +1,4 @@
+
 <div align="center">
 
 # 🏛️ Elmahrosa International  
@@ -13,11 +14,25 @@
 
 ---
 
+## 🚀 Start Here
+
+If you are new to TEOS:
+
+1. Start with **Safe Ingestion Engine** (AI Gateway)  
+2. Explore **TEOS Compliance & AI Governance Stack**  
+3. Review the full **Sovereign Architecture (TEOS Stack)**  
+
+> TEOS is not a single product. It is a **sovereign infrastructure system**.
+
+---
+
 ## 🌍 Strategic Mission
 
 **Elmahrosa International** is the architect of **TEOS**, a constitution-first framework for **Sovereign Digital Public Infrastructure (DPI)**.
 
-Originated in **Egypt** and engineered for **global scalability**, TEOS provides the digital bedrock for modern nation-states—ensuring that **technology serves the law, never the other way around**.
+Originated in **Egypt** and engineered for **global scalability**, TEOS provides the digital bedrock for modern nation-states—ensuring that:
+
+> **Technology serves the law. Never the other way around.**
 
 TEOS is designed for:
 
@@ -25,111 +40,139 @@ TEOS is designed for:
 - Central Banks & Monetary Authorities  
 - International Financial Institutions (IFIs)  
 
-who require **Web3 efficiency with institutional-grade oversight**.
-
 ---
 
 ## 🛡️ The TEOS Doctrine
 
 - **Law-Centric Code**  
-  All execution is subordinate to the Supreme Constitution (ICBC).
+  All execution is subordinate to the Supreme Constitution (ICBC)
 
 - **Human-in-the-Loop Governance**  
-  AI advises; lawful institutions decide.
+  AI advises — institutions decide
 
 - **Justice-Grade Auditability**  
-  Every action is logged as tamper-evident forensic evidence.
+  Every action is tamper-evident and court-readable
 
 - **Zero-Speculation Policy**  
-  TEOS is a civic utility system — not a financial playground.
+  TEOS is a civic system — not a financial instrument
 
 ---
 
-## 🧱 The Sovereign Stack (Logical Architecture)
+## 🧱 The Sovereign Stack
 
-```mermaid
-flowchart TD
-    ICBC["📜 Supreme Charter<br/>ICBC Constitution"]
-    FORGE["🏛 Governance Engine<br/>TEOS-FORGE"]
-    CORE["🔐 Validation Gate<br/>Elmahrosa Core"]
-    KERNEL["⚙️ Execution Kernel<br/>Sovereign Runtime"]
-    COMPLIANCE["⚖️ Enforcement Layer<br/>Compliance Kit"]
-    AI_GUARD["🧠 Safety Gate<br/>AI Guard"]
-    AUDITOR["🕵️ Forensic Evidence<br/>AI Auditor"]
-    PORTAL["👥 Citizen Gateway<br/>Pharaoh Portal"]
+```
 
-    ICBC --> FORGE
-    FORGE --> CORE
-    CORE --> KERNEL
-    KERNEL --> COMPLIANCE
-    COMPLIANCE --> AI_GUARD
-    AI_GUARD --> AUDITOR
-    AUDITOR --> PORTAL
-````
+📜  ICBC Constitution          — Constitutional root of trust
+🏛️  TEOS-FORGE                 — Governance & policy lifecycle
+🔐  Elmahrosa-Core             — Cryptographic validation
+⚙️  Teos-Sovereign-System      — Execution runtime
+⚖️  TEOS-Compliance-Kit        — Regulatory enforcement
+🛡️  TEOS-AI-Guard              — AI safety & oversight
+🔎  TEOS-AI-Auditor            — Forensic audit system
+👥  Teos-Pharaoh-Portal        — Citizen services gateway
 
-> **Root of Trust flows downward.
-> Accountability flows upward.**
+```
+
+> Root of trust flows downward. Accountability flows upward.
 
 ---
 
-## 🧩 Sovereign Stack Inventory
+## 🧩 Ecosystem Overview
 
-| Layer                 | Responsibility                       | Repository                                                                                         |
-| --------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| **Supreme Charter**   | Constitutional Root of Trust (ICBC)  | [ICBC Constitution](https://github.com/Elmahrosa/Teos-International-Civic-Blockchain-Constitution) |
-| **Governance Engine** | Policy Lifecycle & Ratification      | [TEOS-FORGE](https://github.com/Elmahrosa/TEOS-FORGE)                                              |
-| **Validation Gate**   | Cryptographic Authority Verification | [Elmahrosa-Core](https://github.com/Elmahrosa/Elmahrosa-Core)                                      |
-| **Execution Kernel**  | Sovereign Runtime Environment        | [Teos-Sovereign-System](https://github.com/Elmahrosa/Teos-Sovereign-System)                        |
-| **Enforcement Layer** | Jurisdiction & Regulatory Logic      | [Compliance Kit](https://github.com/Elmahrosa/TEOS-Egypt-Compliance-Kit)                           |
-| **Safety Gate**       | Human-Controlled AI Oversight        | [TEOS-AI-Guard](https://github.com/Elmahrosa/TEOS-AI-Guard)                                        |
-| **Forensic Evidence** | Immutable Audit & Accountability     | [TEOS-AI-Auditor](https://github.com/Elmahrosa/TEOS-AI-Auditor)                                    |
-| **Citizen Gateway**   | National Digital Services Portal     | [Pharaoh Portal](https://github.com/Elmahrosa/Teos-Pharaoh-Portal)                                 |
+TEOS is composed of **60+ repositories** across:
 
----
+- Compliance & Data Ingestion  
+- Governance & Identity  
+- Payments & Banking Infrastructure  
+- Smart City & Civic Systems  
+- AI & Agent Safety  
+- Healthcare Platforms  
+- Developer Tooling  
+- National Deployments  
 
-## 🪙 TEOS Token (Civic Eligibility Signal)
-
-The **TEOS token** is a **non-tradable, non-speculative civic utility**.
-
-* **Purpose:** Participation eligibility in the 2026 Constitutional Pilot
-* **Value:** No financial, equity, or speculative value
-* **Function:** Cryptographic proof of lawful participation
-
-> TEOS is **not a currency**.
-> It is a **sovereign access signal**.
+This is not a product suite.  
+It is a **sovereign digital infrastructure ecosystem**.
 
 ---
 
-## 🧪 2026 National Pilot Program
+## 🪙 TEOS Token
 
-TEOS is currently deployed in an **institutional pilot environment** validating:
+The **TEOS token** is:
 
-* National Identity Registries
-* Sovereign Data Exchange (DPI interoperability)
-* Audit-ready AI governance
+- Non-tradable  
+- Non-speculative  
+- Not a financial asset  
 
-📍 **Sandbox Location:** Cairo
-📐 **Standards Alignment:** GovStack v1.0
-🌍 **Framework:** UN Sustainable Development Goals (SDGs)
+It functions as:
+
+> **A cryptographic proof of lawful participation**
+
+Used only within the **2026 Constitutional Pilot**
 
 ---
 
-## 🏛️ Stewardship & Contact
+## 🧪 2026 Institutional Pilot
 
-**Elmahrosa International**
-*Founded 2007 · Architected in Egypt · Trusted Globally*
+Active validation in **Cairo, Egypt**, covering:
 
-**Ayman Seif**
-Founder & Chief Architect
+- National Identity Registries  
+- Sovereign Data Exchange (DPI interoperability)  
+- Audit-ready AI Governance  
 
-📧 [ayman@teosegypt.com](mailto:ayman@teosegypt.com)
-🌐 [https://teosegypt.com](https://teosegypt.com)
+Aligned with:
+
+- **GovStack v1.0**
+- **UN SDG Framework**
+
+---
+
+## 💼 What You Can Use Today
+
+### 🔹 AI Ingestion Gateway
+Compliance-first web data ingestion for AI systems  
+→ Safe, auditable, policy-enforced
+
+### 🔹 AI Governance Stack
+- TEOS-AI-Guard  
+- TEOS-AI-Auditor  
+- Compliance Kit  
+
+### 🔹 Sovereign Infrastructure (TEOS)
+Full-stack national digital architecture (institutional level)
+
+---
+
+## 🧠 Positioning
+
+TEOS is not SaaS.  
+TEOS is not a startup product.
+
+> **TEOS is Sovereign Infrastructure.**
+
+We do not sell software.  
+We build systems nations run on.
+
+---
+
+## 🏛️ Stewardship
+
+**Elmahrosa International**  
+Founded 2007 · Architected in Egypt · Trusted Globally
+
+**Ayman Seif**  
+Founder & Chief Architect  
+
+📧 ayman@teosegypt.com  
+🌐 https://teosegypt.com  
+🐙 https://github.com/Elmahrosa  
 
 ---
 
 <div align="center">
 
-**“Nations own their code. Citizens own their data.”**
-© 2026 Elmahrosa International — All rights reserved under **TESL v2.0**
+**“Nations own their code. Citizens own their data.”**  
+
+© 2026 Elmahrosa International — TESL v2.0
 
 </div>
+```
