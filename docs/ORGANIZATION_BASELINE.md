@@ -1,11 +1,30 @@
 # ELMAHROSA INTERNATIONAL — ORGANIZATION BASELINE
 
 **Audit Date:** 2026-09-14  
-**Status:** PHASE 0 COMPLETE  
-**Total Repositories:** 77  
-**Classifications:** 11 categories (A–K)  
-**Security Scan:** In progress  
-**Last Updated:** 2026-09-14T00:00:00Z
+**Phase 0 Status:** Discovery & Classification COMPLETE ✅ | Evidence Reconciliation REQUIRED ⚠️  
+**Total Repositories:** 77 (A–K classification, 1 primary per repo)  
+**Security Scan:** In progress — baseline metrics and findings require evidence verification  
+**Last Updated:** 2026-09-14 (Reconciliation: 2026-09-14 cbe1ad4)
+
+---
+
+## CRITICAL BASELINE NOTICE
+
+> **This baseline represents Phase 0 discovery results with reconciliation in progress.**
+>
+> **DO NOT** use claims marked UNVERIFIED or SUSPECTED as confirmed facts.
+>
+> **Evidence State Taxonomy:**
+> - **VERIFIED** — Evidence collected and confirmed from current repository state
+> - **UNVERIFIED** — No evidence yet collected; Phase 1 investigation required
+> - **SUSPECTED / UNCONFIRMED** — Investigation target identified; no evidence yet
+> - **REQUIRES HUMAN DECISION** — Technical facts clear; approval authority required
+>
+> **Compliance Scope:** Repository audit cannot certify regulatory/legal compliance (HIPAA, KYC/AML, privacy law). Compliance assessment is external scope requiring specialized auditor/counsel.
+>
+> **Consolidation/Archive:** No destructive changes (merge, archive, rename) until explicit owner approval. All recommendations are candidates for decision, not directives.
+>
+> **See:** `docs/PHASE_0_RECONCILIATION.md` for complete evidence correction trail.
 
 ---
 
@@ -13,15 +32,17 @@
 
 Elmahrosa International operates a **large, strategically multi-domain portfolio** spanning:
 
-- **4 Production Platforms** (Sentinel Shield, AI Engine, UnityCare, DealMaker)
+- **4 Tier-1 Products** (Sentinel Shield, AI Engine, UnityCare, DealMaker)
+  - Claimed production status | Deployment verification: UNVERIFIED
 - **1 Corporate Presence** (Organization + Website + Academy)
 - **5 Infrastructure Ecosystems** (TEOS Bankchain, Pharaoh Portal, Sovereign Stack, App Studio, Payment Rail)
 - **23 Supporting/Infrastructure repositories**
 - **20 Prototypes and Experimental projects**
 - **17 Historical/Archived repositories**
-- **6 Candidates for consolidation/archival**
+- **3 Consolidation candidates** (requires human decision)
+- **2 Archive candidates** (requires human decision)
 
-**Critical Finding:** The organization shows **high fragmentation** with many duplicative naming patterns (e.g., multiple UCH variants, multiple TEOS ecosystem projects). This baseline establishes clear **product hierarchy** and identifies **consolidation opportunities**.
+**Organization Profile:** High fragmentation with duplicative naming patterns (e.g., multiple UCH variants, multiple TEOS ecosystem projects). This baseline establishes clear product hierarchy and identifies consolidation opportunities for future decision-making.
 
 ---
 
@@ -29,7 +50,7 @@ Elmahrosa International operates a **large, strategically multi-domain portfolio
 
 | Category | Code | Count | Purpose |
 |----------|------|-------|---------|
-| **Flagship Production** | A | 4 | Core revenue-generating, market-facing products |
+| **Flagship Production** | A | 4 | Core revenue-generating, market-facing products (claimed production status) |
 | **Production Infrastructure** | B | 7 | Backend services, APIs, databases for live systems |
 | **Active Product** | C | 8 | Actively developed products in beta/launch phase |
 | **Active Development** | D | 12 | In-progress feature work, not yet launched |
@@ -38,8 +59,10 @@ Elmahrosa International operates a **large, strategically multi-domain portfolio
 | **Supporting Repository** | G | 8 | Libraries, documentation, tools, infrastructure |
 | **Documentation/Governance** | H | 6 | Governance, standards, compliance documentation |
 | **Historical/Archived** | I | 12 | Older projects, historical reference |
-| **Duplicate/Merge Candidate** | J | 3 | Functional overlap with primary products |
-| **Abandon/Archive Candidate** | K | 2 | Low activity, unclear purpose, recommend archival |
+| **Duplicate/Merge Candidate** | J | 3 | Functional overlap with primary products (requires human decision) |
+| **Abandon/Archive Candidate** | K | 2 | Low activity, unclear purpose (requires human decision) |
+
+**Total:** 77 repositories (4+7+8+12+10+5+8+6+12+3+2 = 77 ✅)
 
 ---
 
@@ -47,662 +70,482 @@ Elmahrosa International operates a **large, strategically multi-domain portfolio
 
 ### A — FLAGSHIP PRODUCTION (4 repos)
 
-| Repo | Language | Status | Production URL | Security Risk | CI/CD | Tests | Recommendation |
-|------|----------|--------|-----------------|----------------|-------|-------|-----------------|
-| **teos-sentinel-shield** | HTML/JS | ✅ PRODUCTION | Railway + Vercel | **P0: VERIFY** | GitHub Actions | 37 test cases | FIX SECRETS, VERIFY DEPLOYMENT |
-| **teos-ai-engine** | TypeScript | ✅ PRODUCTION | teos-ai-engine.vercel.app | **P0: VERIFY** | GitHub Actions | Partial | FIX ENV, ENABLE PAYMENT VERIFICATION |
-| **UnityCare-Platform** | Python/TypeScript | ✅ PRODUCTION | health.elmahrosa.org | **P1: CHECK HIPAA** | GitHub Actions | 54+ tests | VERIFY COMPLIANCE, AUDIT DEPLOYMENT |
-| **teos-dealmaker** | JavaScript | ✅ PRODUCTION | dealmaker.elmahrosa.org | **P0: VERIFY** | GitHub Actions | 59 test suites | VERIFY TELEGRAM BOT, CHECK MCP INTEGRATION |
+| Repo | Language | Claimed Status | URLs | Verification | Tests | Metrics Note |
+|------|----------|---|---|---|---|---|
+| **teos-sentinel-shield** | HTML/JS | Production (Railway + Vercel) | POST /scan, GET /stats, /events, /audit, /health | **UNVERIFIED** | 37 documented | **METRIC NOTE:** Baseline shows 25 rules / 37 tests. Known authoritative update: 103 rules / 348 tests. Reconciliation status: UNVERIFIED — requires Phase 1 repository inspection. |
+| **teos-ai-engine** | TypeScript | Production (Vercel) | teos-ai-engine.vercel.app | **UNVERIFIED** | Partial | Verify: Dodo Payments integration, API keys (Anthropic/OpenAI), plan enforcement |
+| **UnityCare-Platform** | Python/TypeScript | Production (Railway) | health.elmahrosa.org, api.elmahrosa.org | **UNVERIFIED** | 54+ documented | Compliance gate: HIPAA assessment required (external scope, not repo audit) |
+| **teos-dealmaker** | JavaScript | Production (Railway + Telegram) | dealmaker.elmahrosa.org, @TeosEgypt_bot | **UNVERIFIED** | 59 documented | Verify: Dodo payments webhook, Telegram bot API, MCP gateway, multi-tenant isolation |
+
+**Status:** All claimed production. Deployment verification required Phase 1. No live endpoint testing performed in Phase 0.
 
 ---
 
 ### B — PRODUCTION INFRASTRUCTURE (7 repos)
 
-| Repo | Language | Status | Purpose | Security Risk | Recommendation |
-|------|----------|--------|---------|----------------|-----------------|
-| **teos-bankchain** | TypeScript/Python | ⚠️ CLAIMED PRODUCTION | Digital Banking Engine | **P0: VERIFY PAYMENT** | VERIFY KYC/AML, PRODUCTION STATUS |
-| **Teos-Pharaoh-Portal** | TypeScript | ⚠️ BETA | Civic Gateway / E-Gov | **P1: VERIFY AUTH** | CHECK DEPLOYMENT, VERIFY INTEGRATIONS |
-| **teos-activation-service** | JavaScript | ⚠️ BETA | License/Billing Service | **P1: VERIFY WEBHOOK** | VERIFY DODO INTEGRATION, TEST BILLING |
-| **teos-auth-library** | (Various) | ✅ LIBRARY | Reusable Auth Module | LOW | INTEGRATE INTO PLATFORMS, TEST |
-| **teos-payment-rail** | (Unknown) | 🤷 UNCLEAR | Sovereign Payment | **P1: VERIFY** | DETERMINE STATUS, DOCUMENT PURPOSE |
-| **teos-sovereign-wallet** | TypeScript | 🤷 UNCLEAR | Digital Wallet | **P1: VERIFY** | DETERMINE STATUS, VERIFY INTEGRATIONS |
-| **teos-compliance-kit** | Python | 🤷 TOOL | Compliance Templates | LOW | INTEGRATE INTO PLATFORMS |
+| Repo | Status | Purpose | Verification | Notes |
+|------|--------|---------|---|---|
+| **teos-bankchain** | Claimed Production | Digital Banking Engine | **UNVERIFIED** | Compliance gate: KYC/AML verification required (external scope). Verify real payment processing. |
+| **Teos-Pharaoh-Portal** | Beta | Civic Gateway / E-Gov | **UNVERIFIED** | Verify: Authority chain integration, identity auth, audit trail implementation |
+| **teos-activation-service** | Beta | License/Billing Service | **UNVERIFIED** | Verify: Dodo integration, webhook HMAC signing |
+| **teos-auth-library** | Library | Reusable Auth Module | **UNVERIFIED** | Integration status across platforms unclear. Phase 1 audit required. |
+| **teos-payment-rail** | Unclear | Sovereign Payment | **UNVERIFIED** | Purpose/status unclear. Phase 1 clarification required. |
+| **teos-sovereign-wallet** | Unclear | Digital Wallet | **UNVERIFIED** | Integration status unclear. Phase 1 clarification required. |
+| **teos-compliance-kit** | Tool | Compliance Templates | **UNVERIFIED** | Integration into platforms unclear. |
 
 ---
 
 ### C — ACTIVE PRODUCT (8 repos)
 
-| Repo | Language | Status | Purpose | Security Risk | Recommendation |
-|------|----------|--------|---------|----------------|-----------------|
-| **UCH-Backend** | JavaScript | ⚠️ BETA | UnityCare Backend API | **P1: CHECK HIPAA** | VERIFY DEPLOYMENT, ENABLE AUTH |
-| **UCH-Buyer-Kit** | (Unknown) | 🤷 UNCLEAR | Hospital Sales/Pricing | LOW | DOCUMENT PURPOSE |
-| **U_C_H2** | TypeScript | ⚠️ BETA | UnityCare Platform v2 | **P1: CHECK HIPAA** | VERIFY BLOCKCHAIN, DOCUMENT STATUS |
-| **uch-sovereign-core** | JavaScript | 🤷 BETA | UnityCare Core Services | **P1: CHECK HIPAA** | CONSOLIDATE WITH UCH-BACKEND |
-| **Unity-Care-Hospital-Sovereign** | JavaScript | ⚠️ BETA | UCH Sovereign Variant | **P1: DUPLICATE** | MERGE OR CLARIFY INTENT |
-| **UnityCare** | HTML | 🤷 STUB | Unknown Purpose | LOW | DOCUMENT OR ARCHIVE |
-| **teos-ai-platform** | (Unknown) | 🤷 UNCLEAR | AI Platform | **P1: VERIFY** | DETERMINE STATUS |
-| **teos-never-died** | Python | 🤷 ALPHA | RAVEN AI Audit Engine | **P1: VERIFY** | DETERMINE RELATIONSHIP TO SENTINEL |
+| Repo | Status | Purpose | Notes |
+|------|--------|---------|---|
+| **UCH-Backend** | Beta | UnityCare Backend API | HIPAA assessment required (external). |
+| **UCH-Buyer-Kit** | Unclear | Hospital Sales/Pricing | Purpose/status unclear. Phase 1 clarification. |
+| **U_C_H2** | Beta | UnityCare Platform v2 | HIPAA assessment required (external). Blockchain integration unclear. |
+| **uch-sovereign-core** | Beta | UnityCare Core Services | HIPAA assessment required (external). Possible extraction from UCH-Backend. |
+| **Unity-Care-Hospital-Sovereign** | Beta | UCH Sovereign Variant | Duplicate candidate: evaluate merge with UCH-Backend (REQUIRES HUMAN DECISION). |
+| **UnityCare** | Stub | Unknown Purpose | Purpose unclear. Phase 1 clarification. |
+| **teos-ai-platform** | Unclear | AI Platform | Status/purpose unclear. Phase 1 clarification. |
+| **teos-never-died** | Alpha | RAVEN AI Audit Engine | Relationship to Sentinel Shield unclear. Phase 1 investigation. |
 
 ---
 
 ### D — ACTIVE DEVELOPMENT (12 repos)
 
-| Repo | Language | Status | Purpose | Recommendation |
-|------|----------|--------|---------|-----------------|
-| **teos-app-studio** | TypeScript | 🔄 IN PROGRESS | Monorepo / App Builder | CLARIFY SCOPE, DOCUMENT ARCHITECTURE |
-| **TeosEgypt-AI-Travel-OS** | TypeScript | 🔄 IN PROGRESS | Travel AI Platform | DOCUMENT PURPOSE, VERIFY MVP |
-| **teos-sentinel-stack** | HTML | 🔄 IN PROGRESS | Sentinel Monorepo | CONSOLIDATE WITH SHIELD, CLARIFY INTENT |
-| **teos-platform** | TypeScript | 🔄 IN PROGRESS | Consolidated Monorepo | CLARIFY PURPOSE, DOCUMENT DEPS |
-| **teos-forge** | JavaScript | 🔄 IN PROGRESS | Governance Engine | VERIFY DEPLOYMENT, DOCUMENT API |
-| **Elmahrosa-Core** | JavaScript | 🔄 IN PROGRESS | Central Authority System | VERIFY DEPLOYMENT, DOCUMENT AUTHORITY CHAIN |
-| **teos-vap-engine** | JavaScript | 🔄 IN PROGRESS | Multi-Agent Workforce | DOCUMENT INTEGRATIONS, VERIFY MVP |
-| **TEOS-Identity-Insight-AI** | JavaScript | 🔄 IN PROGRESS | Identity Risk Engine | VERIFY DEPLOYMENT, TEST LOGIC |
-| **TEOS-Governance** | JavaScript | 🔄 IN PROGRESS | Proposal / Voting System | VERIFY BLOCKCHAIN, DOCUMENT FLOWS |
-| **teos-dealmaker** | JavaScript | ✅ ACTIVE | Revenue OS (see A) | ALREADY CLASSIFIED FLAGSHIP |
-| **Ask-Teos-AI** | TypeScript | 🔄 IN PROGRESS | AI Assistant | VERIFY DEPLOYMENT, TEST RESPONSES |
-| **Teos-Sat-Sovereign-System** | TypeScript | 🔄 IN PROGRESS | Satellite/Sovereign Variant | CLARIFY PURPOSE, DOCUMENT RELATIONSHIP |
+| Repo | Status | Purpose | Notes |
+|------|--------|---------|---|
+| **teos-app-studio** | In Progress | Monorepo / App Builder | Scope/dependencies unclear. Phase 1 clarification. |
+| **TeosEgypt-AI-Travel-OS** | In Progress | Travel AI Platform | Purpose verification required. |
+| **teos-sentinel-stack** | In Progress | Sentinel Monorepo | Consolidation candidate: evaluate merge with teos-sentinel-shield (REQUIRES HUMAN DECISION). |
+| **teos-platform** | In Progress | Consolidated Monorepo | Purpose/dependencies unclear. Phase 1 clarification. |
+| **teos-forge** | In Progress | Governance Engine | Deployment/API documentation required. |
+| **Elmahrosa-Core** | In Progress | Central Authority System | Deployment/authority chain documentation required. |
+| **teos-vap-engine** | In Progress | Multi-Agent Workforce | Integration/MVP status unclear. |
+| **TEOS-Identity-Insight-AI** | In Progress | Identity Risk Engine | Deployment/logic testing required. |
+| **TEOS-Governance** | In Progress | Proposal / Voting System | Blockchain integration documentation required. |
+| **Ask-Teos-AI** | In Progress | AI Assistant | Deployment/response testing required. |
+| **Teos-Sat-Sovereign-System** | In Progress | Satellite/Sovereign Variant | Consolidation candidate: clarify relationship to Elmahrosa-Core (REQUIRES HUMAN DECISION). |
 
 ---
 
 ### E — PROTOTYPE (10 repos)
 
-| Repo | Language | Status | Purpose | Recommendation |
-|------|----------|--------|---------|-----------------|
-| **teos-ai-guard** | TypeScript | 🧪 PROTOTYPE | Threat Detection Gateway | DOCUMENT SCOPE, VERIFY INTEGRATION |
-| **teos-civic-mixer** | TypeScript | 🧪 PROTOTYPE | Privacy Mixer / MCP Bridge | VERIFY MCP CONTRACT, TEST CRYPTO |
-| **teos-civic-dpi-vc-sim** | Python | 🧪 PROTOTYPE | Credential Simulator | DETERMINE PRODUCTION STATUS |
-| **teos-superintelligence** | Python | 🧪 PROTOTYPE | Advanced Reasoning Engine | DOCUMENT ROADMAP, CLASSIFY AS RESEARCH |
-| **Digital-Reconstruction-of-Gaza** | (Unknown) | 🧪 PROTOTYPE | Humanitarian DPI | VERIFY STAKEHOLDERS, DOCUMENT STATUS |
-| **teos-event-site** | TypeScript | 🧪 PROTOTYPE | Event Registration Site | VERIFY DEPLOYMENT, TEST REGISTRATION |
-| **teos-mission-control** | Python | 🧪 PROTOTYPE | Deployment Dashboard | VERIFY DEPLOYMENT, TEST MONITORING |
-| **teos-labs-due-diligence-mcp** | JavaScript | 🧪 PROTOTYPE | Due Diligence MCP | VERIFY MCP TRANSPORT, TEST LOGIC |
-| **agent-code-risk-mcp** | TypeScript | 🧪 PROTOTYPE | Agent Code Risk Scanner | VERIFY MCP CONTRACT, TEST SCANNING |
-| **teosmcp-ci-example** | JavaScript | 🧪 PROTOTYPE | CI Integration Example | MARK AS REFERENCE / DOCUMENTATION |
+| Repo | Status | Purpose | Notes |
+|------|--------|---------|---|
+| **teos-ai-guard** | Prototype | Threat Detection Gateway | Scope/integration documentation required. |
+| **teos-civic-mixer** | Prototype | Privacy Mixer / MCP Bridge | MCP contract verification required. Cryptography testing required. |
+| **teos-civic-dpi-vc-sim** | Prototype | Credential Simulator | Production status clarification required. |
+| **teos-superintelligence** | Prototype | Advanced Reasoning Engine | Roadmap/research classification required. |
+| **Digital-Reconstruction-of-Gaza** | Prototype | Humanitarian DPI | Stakeholder verification/status documentation required. |
+| **teos-event-site** | Prototype | Event Registration Site | Deployment/form testing required. |
+| **teos-mission-control** | Prototype | Deployment Dashboard | Deployment/monitoring testing required. |
+| **teos-labs-due-diligence-mcp** | Prototype | Due Diligence MCP | MCP transport/logic testing required. |
+| **agent-code-risk-mcp** | Prototype | Agent Code Risk Scanner | MCP contract/scanning testing required. |
+| **teosmcp-ci-example** | Prototype | CI Integration Example | Mark as reference/documentation. |
 
 ---
 
 ### F — EXPERIMENT (5 repos)
 
-| Repo | Language | Status | Purpose | Recommendation |
-|------|----------|--------|---------|-----------------|
-| **teos-comply-crawl** | Python | 🔬 EXPERIMENT | Compliance Crawler | VERIFY SCANNING LOGIC, DOCUMENT RULESET |
-| **safe-ingestion-engine** | Python | 🔬 EXPERIMENT | Data Ingestion Processor | DETERMINE PURPOSE, DOCUMENT SCHEMA |
-| **AssetVault** | Solidity | 🔬 EXPERIMENT | Smart Contract Vault | AUDIT SMART CONTRACT, VERIFY MAINNET |
-| **teoslinker-bot** | JavaScript | 🔬 EXPERIMENT | Telegram Security Bot | VERIFY TELEGRAM API, TEST ALERTS |
-| **x-teos-pro** | TypeScript | 🔬 EXPERIMENT | X/Twitter AI Tool | VERIFY TWITTER API, TEST GENERATION |
+| Repo | Status | Purpose | Notes |
+|------|--------|---------|---|
+| **teos-comply-crawl** | Experiment | Compliance Crawler | Scanning logic/ruleset documentation required. |
+| **safe-ingestion-engine** | Experiment | Data Ingestion Processor | Purpose/schema documentation required. |
+| **AssetVault** | Experiment | Smart Contract Vault | Smart contract audit required. Mainnet verification required. |
+| **teoslinker-bot** | Experiment | Telegram Security Bot | Telegram API/alerts testing required. |
+| **x-teos-pro** | Experiment | X/Twitter AI Tool | Twitter API/generation testing required. |
 
 ---
 
 ### G — SUPPORTING REPOSITORY (8 repos)
 
-| Repo | Language | Status | Purpose | Recommendation |
-|------|----------|--------|---------|-----------------|
-| **teos-ecosystem-launchpad** | TypeScript | 📦 LIBRARY | Token Launch Platform | VERIFY DEPLOYMENT, INTEGRATE PAYMENTS |
-| **teos-ecosystem-nft-marketplace** | (Unknown) | 📦 LIBRARY | NFT Marketplace | DOCUMENT SCHEMA, VERIFY BLOCKCHAIN |
-| **teos-ecosystem-events** | HTML | 📦 LIBRARY | Event Calendar / CMS | VERIFY CONTENT, TEST FORMS |
-| **teos-ecosystem-mining** | (Unknown) | 📦 LIBRARY | Mining Pool / Incentives | DOCUMENT PURPOSE |
-| **teos-nexus** | (Unknown) | 📦 LIBRARY | API Hub / Router | DOCUMENT API CONTRACT |
-| **TEOS-API-Sovereign** | (Unknown) | 📦 SDK | Developer SDK | DOCUMENT MODULES, VERIFY TESTS |
-| **Teos-Integration** | (Unknown) | 📦 LIBRARY | Integration Layer | DOCUMENT CONNECTORS |
-| **Elmahrosa-Map-of-PI** | TypeScript | 📦 LIBRARY | Geospatial Mapping | VERIFY DEPLOYMENT, TEST MAP TILES |
+| Repo | Status | Purpose | Notes |
+|------|--------|---------|---|
+| **teos-ecosystem-launchpad** | Library | Token Launch Platform | Deployment/payment integration verification required. |
+| **teos-ecosystem-nft-marketplace** | Library | NFT Marketplace | Schema/blockchain verification required. |
+| **teos-ecosystem-events** | Library | Event Calendar / CMS | Content/form verification required. |
+| **teos-ecosystem-mining** | Library | Mining Pool / Incentives | Purpose documentation required. |
+| **teos-nexus** | Library | API Hub / Router | API contract documentation required. |
+| **TEOS-API-Sovereign** | SDK | Developer SDK | Module documentation/testing verification required. |
+| **Teos-Integration** | Library | Integration Layer | Connector documentation required. |
+| **Elmahrosa-Map-of-PI** | Library | Geospatial Mapping | Deployment/map tile verification required. |
 
 ---
 
 ### H — DOCUMENTATION/GOVERNANCE (6 repos)
 
-| Repo | Language | Status | Purpose | Recommendation |
-|------|----------|--------|---------|-----------------|
-| **elmahrosa-org** | Markdown | 📚 DOC | Quantum-Safe Stack Spec | VERIFY NIST ALIGNMENT, REVIEW SCHEMAS |
-| **teos-international-civic-blockchain-constitution** | HTML | 📚 DOC | ICBC Constitution | VERIFY LEGAL STATUS |
-| **teos-sovereign-security-stack** | HTML | 📚 DOC | Security Documentation | CONSOLIDATE WITH SENTINEL STACK |
-| **TEOS-Egypt-SovereignStack-2026** | Python | 📚 DOC | National Pilot Reference | DOCUMENT DEPLOYMENT, VERIFY INTEGRATION |
-| **.github** | HTML | 📚 CONFIG | Organization Templates | VERIFY WORKFLOWS, UPDATE POLICIES |
-| **ConSensus-Elmahrosa-Alexandria-Prep** | (Unknown) | 📚 DOC | Event/Project Scaffold | CLARIFY PURPOSE, CONSOLIDATE OR ARCHIVE |
+| Repo | Status | Purpose | Notes |
+|------|--------|---------|---|
+| **elmahrosa-org** | Documentation | Quantum-Safe Stack Spec | NIST alignment verification required. |
+| **teos-international-civic-blockchain-constitution** | Documentation | ICBC Constitution | Legal status verification required (external). |
+| **teos-sovereign-security-stack** | Documentation | Security Documentation | Consolidation candidate: merge with teos-sentinel-stack (REQUIRES HUMAN DECISION). |
+| **TEOS-Egypt-SovereignStack-2026** | Documentation | National Pilot Reference | Deployment/integration documentation required. |
+| **.github** | Configuration | Organization Templates | Workflow verification required. |
+| **ConSensus-Elmahrosa-Alexandria-Prep** | Documentation | Event/Project Scaffold | Purpose/consolidation decision required (REQUIRES HUMAN DECISION). |
 
 ---
 
 ### I — HISTORICAL/ARCHIVED (12 repos)
 
-| Repo | Language | Status | Purpose | Archive Action |
-|------|----------|--------|---------|-----------------|
-| **fpbe-bank** | TypeScript | 📦 OLD | First Pimisr Bank (v0) | ARCHIVE - SUPERCEDED BY BANKCHAIN |
-| **FPBE-First-Pimisr-Bank** | TypeScript | 📦 OLD | FPBE Variant | ARCHIVE - CONSOLIDATE WITH FPBE-BANK |
-| **salma-unity-care-hospital** | JavaScript | 📦 OLD | UCH Early Prototype | ARCHIVE - SUPERCEDED BY UCH-BACKEND |
-| **ElMahrosa-Pi-Smart-City** | TypeScript | 📦 OLD | Smart City v0 | ARCHIVE - SUPERCEDED BY TEOS-PI-SMART-CITY |
-| **Elmahrosa-Blockchain** | JavaScript | 📦 OLD | Blockchain Infrastructure | ARCHIVE - PURPOSE UNCLEAR |
-| **TeosEgypt-DomainPlatform** | JavaScript | 📦 OLD | Domain Registry | ARCHIVE - PURPOSE UNCLEAR |
-| **TEOS-NFT-AI-Generator** | JavaScript | 📦 OLD | NFT Generation | ARCHIVE - SUPERCEDED BY AI ENGINE |
-| **Nilex** | (Unknown) | 📦 OLD | Unknown Project | ARCHIVE - NO ACTIVITY |
-| **ERT-LAUNCH** | JavaScript | 📦 OLD | Token Launch (v0) | ARCHIVE - SUPERCEDED BY LAUNCHPAD |
-| **Mine_alltokens** | HTML | 📦 OLD | Mining Scheduler | ARCHIVE - PURPOSE UNCLEAR |
-| **Teos-Gold-Reserve** | JavaScript | 📦 OLD | Asset Reserve | ARCHIVE - PURPOSE UNCLEAR |
-| **demo-repository** | HTML | 📦 OLD | GitHub Demo | ARCHIVE - REFERENCE ONLY |
+**Archive Candidates (REQUIRES HUMAN DECISION):**
+
+| Repo | Status | Reason | Superseded By | Notes |
+|------|--------|--------|---|---|
+| **fpbe-bank** | Old | Historical/superseded | teos-bankchain | Archive evaluation required. |
+| **FPBE-First-Pimisr-Bank** | Old | Duplicate of fpbe-bank | teos-bankchain | Archive evaluation required. |
+| **salma-unity-care-hospital** | Old | Superseded by UnityCare-Platform | UnityCare-Platform | Archive evaluation required. |
+| **ElMahrosa-Pi-Smart-City** | Old | Superseded by teos-pi-smart-city | teos-pi-smart-city | Archive evaluation required. |
+| **Elmahrosa-Blockchain** | Old | Purpose unclear, low activity | None | Archive evaluation required. |
+| **TeosEgypt-DomainPlatform** | Old | Purpose unclear, low activity | None | Archive evaluation required. |
+| **TEOS-NFT-AI-Generator** | Old | Superseded by teos-ai-engine | teos-ai-engine | Archive evaluation required. |
+| **Nilex** | Old | No activity, purpose unclear | None | Archive evaluation required. |
+| **ERT-LAUNCH** | Old | Superseded by teos-ecosystem-launchpad | teos-ecosystem-launchpad | Archive evaluation required. |
+| **Mine_alltokens** | Old | Purpose unclear, low activity | None | Archive evaluation required. |
+| **Teos-Gold-Reserve** | Old | Purpose unclear, low activity | None | Archive evaluation required. |
+| **demo-repository** | Old | GitHub demo template | None | Archive evaluation required. |
 
 ---
 
-### J — DUPLICATE/MERGE CANDIDATE (3 repos)
+### J — CONSOLIDATION CANDIDATES (3 repos)
 
-| Repo | Primary | Status | Issue | Action |
-|------|---------|--------|-------|--------|
-| **Unity-Care-Hospital-Sovereign** | UCH-Backend | 🔄 ACTIVE | Duplicate codebase, unclear variant | MERGE INTO UCH-BACKEND OR CLARIFY INTENT |
-| **uch-sovereign-core** | UCH-Backend | 🔄 ACTIVE | Possible core library extracted | CLARIFY: LIBRARY OR OBSOLETE? |
-| **Teos-Sovereign-System** | Elmahrosa-Core | 🔄 ACTIVE | Possible earlier version | CLARIFY PURPOSE, CONSOLIDATE OR ARCHIVE |
+**Status: REQUIRES HUMAN DECISION — No action until approved**
 
----
-
-### K — ABANDON/ARCHIVE CANDIDATE (2 repos)
-
-| Repo | Status | Issue | Recommendation |
-|------|--------|-------|-----------------|
-| **teos-github-pages-site** | 🤷 EMPTY | No code, no activity | ARCHIVE IMMEDIATELY |
-| **Elmahrosa-Sovereign-AI-Academy** | 🤷 EMPTY | No code, unclear relationship to teos-academy | MERGE OR ARCHIVE |
+| Repo | Candidate For | Primary | Reason | Evidence |
+|------|---|---|---|---|
+| **Unity-Care-Hospital-Sovereign** | Consolidation evaluation | UCH-Backend | Possible duplicate codebase, unclear variant | Repository exists with overlapping purpose |
+| **uch-sovereign-core** | Consolidation evaluation | UCH-Backend | Possible core library extract; unclear purpose | Naming suggests library extraction |
+| **Teos-Sat-Sovereign-System** | Consolidation evaluation | Elmahrosa-Core | Possible earlier version; relationship unclear | Similar naming and purpose |
 
 ---
 
-## FLAGSHIP PRODUCT MATRIX
+### K — ARCHIVE CANDIDATES (2 repos)
 
-### PRIMARY PRODUCTS (Ready for Launch)
+**Status: REQUIRES HUMAN DECISION — No action until approved**
 
-#### 1. TEOS Sentinel Shield — Pre-Execution Security
-- **Status:** ✅ PRODUCTION
-- **URL:** Railway + Vercel
-- **Tech Stack:** Node.js + Express, Vercel serverless, WebSocket
-- **Core Capability:** 25 deterministic rules, BLOCK/WARN/ALLOW verdicts, audit trail
-- **Revenue Model:** Subscription (licensing per deployment)
-- **Deployment:** Railway unified server + Vercel HTTP API
-- **P0 Blockers:** 
-  - [ ] Verify production domains
-  - [ ] Verify payment integration (if any)
-  - [ ] Scan for exposed secrets
-  - [ ] Test health endpoints
-- **Launch Status:** READY FOR BETA
+| Repo | Status | Issue | Notes |
+|------|--------|-------|---|
+| **teos-github-pages-site** | Empty | No code, no activity | Archive evaluation required. |
+| **Elmahrosa-Sovereign-AI-Academy** | Empty/Minimal | No code, unclear relationship to teos-academy | Merge or archive evaluation required. |
 
 ---
 
-#### 2. TEOS AI Engine — Content Generation SaaS
-- **Status:** ✅ PRODUCTION
-- **URL:** teos-ai-engine.vercel.app
-- **Tech Stack:** Next.js 16, TypeScript, PostgreSQL, Anthropic Claude + OpenAI fallback
-- **Core Capability:** Multi-platform content generation (X, LinkedIn, Instagram, Facebook, TikTok, Threads, Telegram)
-- **Revenue Model:** Plan-based SaaS ($29–$149/month)
-- **Deployment:** Vercel
-- **P0 Blockers:**
-  - [ ] Verify Dodo Payments integration
-  - [ ] Verify database credentials (Neon)
-  - [ ] Verify AI provider keys stored safely
-  - [ ] Test plan enforcement server-side
-- **Launch Status:** READY FOR PRODUCTION
+## FLAGSHIP PRODUCTS — CLAIMED vs. VERIFIED STATUS
+
+### 1. TEOS Sentinel Shield
+
+**Claimed Status:** Production (Railway + Vercel)  
+**Repository Metrics:** 25 rules / 37 test cases (per README.md)  
+**Metric Status:** **OUTDATED — UNVERIFIED**
+
+**Metric Correction Note:**
+- Known authoritative update: 103 rules (64 core + 29 Solana + 10 EVM) / 348 tests
+- Status: UNVERIFIED — requires Phase 1 repository inspection to confirm
+- Phase 1 action: Inspect `main` branch for current rule/test count
+
+**Deployment Verification Status:** UNVERIFIED  
+**Phase 1 Actions:**
+- [ ] Test live endpoints (POST /scan, GET /stats, /events, /audit, /health)
+- [ ] Verify TLS/CORS headers
+- [ ] Confirm rule engine is deterministic (not mocked)
+- [ ] Verify audit persistence
 
 ---
 
-#### 3. UnityCare Platform — Healthcare Research Compliance
-- **Status:** ✅ PRODUCTION
-- **URL:** health.elmahrosa.org (frontend) + api.elmahrosa.org (backend)
-- **Tech Stack:** Next.js + FastAPI, PostgreSQL, Redis, Claude for audit narratives
-- **Core Capability:** Deterministic compliance evaluation + Claude-generated audit trails for research data access
-- **Revenue Model:** Institutional licensing ($45K–$425K+ annual)
-- **Deployment:** Railway
-- **P0 Blockers:**
-  - [ ] Verify HIPAA compliance posture (NOT CERTIFIED YET)
-  - [ ] Verify MFA enforcement (TOTP on admin/provider)
-  - [ ] Scan for PHI exposure in logs
-  - [ ] Verify database encryption (at rest + in transit)
-- **Launch Status:** BETA → PRODUCTION (after compliance verification)
+### 2. TEOS AI Engine
+
+**Claimed Status:** Production (Vercel)  
+**URL:** teos-ai-engine.vercel.app  
+**Deployment Verification Status:** UNVERIFIED  
+**Phase 1 Actions:**
+- [ ] Test live landing page
+- [ ] Verify authentication (NextAuth session)
+- [ ] Verify Dodo Payments integration (webhook signature)
+- [ ] Verify API keys are externalized (not hardcoded)
+- [ ] Test plan enforcement (usage limits)
 
 ---
 
-#### 4. TEOS DealMaker — AI Revenue Operating System
-- **Status:** ✅ PRODUCTION
-- **URL:** dealmaker.elmahrosa.org
-- **Tech Stack:** Node.js, PostgreSQL, 13-agent workforce, MCP gateway, Telegram bot
-- **Core Capability:** AI-driven deal pipeline with human approval gates, 13 specialized agents, hash-chained audit
-- **Revenue Model:** Per-seat SaaS ($99–$999/month) + enterprise custom
-- **Deployment:** Node.js on Railway/Vercel
-- **P0 Blockers:**
-  - [ ] Verify Dodo payment webhook signing
-  - [ ] Verify Telegram bot API credentials
-  - [ ] Verify MCP gateway connectivity
-  - [ ] Test multi-tenant isolation (workspace-level)
-- **Launch Status:** PRODUCTION
+### 3. UnityCare Platform
+
+**Claimed Status:** Production (Railway)  
+**URLs:** health.elmahrosa.org (frontend) + api.elmahrosa.org (backend)  
+**Deployment Verification Status:** UNVERIFIED  
+**Compliance Gate:** HIPAA assessment (EXTERNAL SCOPE — not repo audit)
+
+**Phase 1 Actions:**
+- [ ] Test live endpoints
+- [ ] Verify JWT authentication
+- [ ] Verify MFA enforcement (TOTP on admin/provider)
+- [ ] Confirm database TLS + encryption
+- [ ] Engage HIPAA compliance auditor (separate scope)
 
 ---
 
-### SECONDARY PRODUCTS (In Beta/Active Development)
+### 4. TEOS DealMaker
 
-#### 5. TEOS Bankchain — Digital Banking Engine
-- **Status:** ⚠️ CLAIMED PRODUCTION
-- **Purpose:** KYC/AML, Pi Network integration, multi-currency wallets
-- **P0 Blockers:**
-  - [ ] Verify real payment processing (not mocked)
-  - [ ] Verify KYC/AML integrations
-  - [ ] Verify Pi Network SDK integration
-  - [ ] Verify database TLS + encryption
-- **Launch Status:** REQUIRES VERIFICATION
-
----
-
-#### 6. Teos-Pharaoh-Portal — E-Government Gateway
-- **Status:** ⚠️ BETA
-- **Purpose:** Citizen e-services, identity verification, civic participation
-- **P1 Blockers:**
-  - [ ] Verify authority chain integration
-  - [ ] Verify identity authentication
-  - [ ] Verify audit trail implementation
-- **Launch Status:** BETA
+**Claimed Status:** Production (Railway + Telegram)  
+**URLs:** dealmaker.elmahrosa.org, @TeosEgypt_bot  
+**Deployment Verification Status:** UNVERIFIED  
+**Phase 1 Actions:**
+- [ ] Test web dashboard
+- [ ] Verify Telegram bot API connectivity
+- [ ] Verify Dodo payment webhook HMAC signing
+- [ ] Test multi-tenant workspace isolation
+- [ ] Verify MCP gateway connectivity (if live)
 
 ---
 
-## SECURITY AUDIT — HIGH-LEVEL FINDINGS
+## SECURITY FINDINGS — INVESTIGATION FRAMEWORK
 
-### P0 — CRITICAL (Must fix before production)
+**Status:** SUSPECTED / UNCONFIRMED — No remediation until evidence collected
 
-**Finding 1: SECRETS EXPOSURE RISK**
-- [ ] Multiple `.env.example` files expose pattern
-- [ ] Verify no `.env`, `.env.local`, `.env.production` committed
-- [ ] Scan Git history for leaked API keys, JWT secrets, database URLs
-- [ ] **Action:** Run `git-secrets`, `truffleHog`, `detect-secrets` on all repos
+### P0 INVESTIGATION — Suspected Secrets Exposure
 
-**Finding 2: PAYMENT INTEGRATION VERIFICATION**
-- [ ] Dodo Payments webhook signatures (HMAC)
-- [ ] Stripe secret keys (teos-bankchain)
-- [ ] Pi Network wallet integration
-- [ ] **Action:** Verify webhook implementations, test signature validation
+**Status:** UNCONFIRMED
 
-**Finding 3: DATABASE CREDENTIALS**
-- [ ] DATABASE_URL exposure in CI/CD logs
-- [ ] Verify TLS on all database connections
-- [ ] Verify encryption at rest (if required)
-- [ ] **Action:** Audit environment variable handling in all platforms
+**Description:**
+Multiple `.env.example` files present in production repositories. Investigation required to confirm whether actual secrets (API keys, JWTs, database URLs, encryption keys) have been committed to Git history or exposed in CI/CD logs.
 
-**Finding 4: THIRD-PARTY API KEYS**
-- [ ] Anthropic API keys (teos-ai-engine)
-- [ ] OpenAI API keys (fallback)
-- [ ] Telegram bot tokens (teoslinker-bot, teos-dealmaker)
-- [ ] Pi Network SDK keys
-- [ ] **Action:** Verify key rotation policy, no hardcoded keys in code
+**Evidence Needed:**
+- Git history scan results (truffleHog, detect-secrets)
+- GitHub secret scanning alerts (if enabled)
+- CI/CD workflow log audit (GitHub Actions secrets exposure)
+- Repository commit history inspection
 
----
+**Phase 1 Verification Method:**
+- Run `truffleHog filesystem .` on each repo
+- Query GitHub API for secret scanning alerts
+- Audit `.github/workflows/` for secret patterns in logs
+- Review recent commits (last 30 days) for credential patterns
 
-### P1 — HIGH (Must fix before public launch)
+**Repositories at Risk:**
+- teos-ai-engine (Anthropic/OpenAI API keys)
+- teos-bankchain (payment processor keys)
+- teos-dealmaker (Dodo Payments webhook secrets)
+- UnityCare-Platform (database credentials)
+- teos-sentinel-shield (API authentication keys)
 
-**Finding 5: HIPAA COMPLIANCE (UnityCare)**
-- ⚠️ No SOC 2 certification yet
-- ⚠️ Audit logging present, but compliance posture unclear
-- **Action:** Engage compliance reviewer, document HIPAA alignment
-
-**Finding 6: AUTH LIBRARY INTEGRATION**
-- [ ] `teos-auth-library` exists but unclear if integrated
-- [ ] Verify JWT implementation across platforms
-- [ ] Verify MFA enforcement on admin/provider roles
-- **Action:** Audit auth flow in each platform
-
-**Finding 7: MCP INTEGRATION VERIFICATION**
-- [ ] Verify teos-civic-mixer implementation
-- [ ] Verify agent-code-risk-mcp scanning logic
-- [ ] Verify teos-labs-due-diligence-mcp tool definitions
-- **Action:** Test MCP contracts against Claude/compatible clients
-
-**Finding 8: CI/CD SECURITY**
-- [ ] Verify GitHub Actions permissions (least-privilege)
-- [ ] Verify no secrets in workflow logs
-- [ ] Verify signed commits enforced
-- **Action:** Audit `.github/workflows/` across all repos
+**Current Evidence:** None collected in Phase 0  
+**No remediation until confirmed.**
 
 ---
 
-### P2 — MEDIUM (Important for stability)
+### P0 INVESTIGATION — Suspected Payment Webhook Vulnerability
 
-**Finding 9: DEPENDENCY VULNERABILITIES**
-- [ ] Run `npm audit`, `pip audit` on all Node.js and Python repos
-- [ ] Identify outdated dependencies
-- [ ] Test after each update
-- **Action:** Establish dependency update schedule
+**Status:** UNCONFIRMED
 
-**Finding 10: TEST COVERAGE**
-- ✅ Sentinel Shield: 37 test cases
-- ✅ DealMaker: 59 test suites
-- ✅ UnityCare: 54+ tests
-- ⚠️ AI Engine: Partial test coverage
-- ⚠️ Many repos: No tests visible
-- **Action:** Establish minimum test coverage requirements (80% target)
+**Description:**
+Payment integration repositories (Dodo, Stripe, Pi Network) require verification that webhook signatures are correctly validated. Missing or weak HMAC validation could allow forged payment notifications.
 
-**Finding 11: BUILD PIPELINE CONSISTENCY**
-- [ ] Standardize CI/CD across platforms
-- [ ] Ensure `npm run build` passes zero-error
-- [ ] Ensure `npm run lint` passes zero-warning
-- [ ] Ensure TypeScript strict mode passes
-- **Action:** Create unified build validation template
+**Evidence Needed:**
+- Code inspection of webhook signature verification
+- Test payload validation with invalid signatures
+- API key rotation policy documentation
+
+**Phase 1 Verification Method:**
+- Inspect webhook handler code in teos-ai-engine, teos-dealmaker, teos-bankchain
+- Verify HMAC-SHA256 signature validation
+- Test webhook with invalid/missing signature
+- Confirm payment provider credentials are externalized
+
+**Current Evidence:** None collected in Phase 0  
+**No remediation until confirmed.**
 
 ---
 
-## PRODUCTION STATUS MATRIX
+### P0 INVESTIGATION — Suspected Database Credential Exposure
 
-| Product | Environment | Domain | Health Endpoint | TLS | Auth | Rate Limit | Audit | Monitoring |
-|---------|-------------|--------|------------------|-----|------|-----------|-------|------------|
-| **Sentinel Shield** | Railway | sentinel.teosegypt.com | /health | ✅ | API Key | ✅ | ✅ | UNVERIFIED |
-| **AI Engine** | Vercel | teos-ai-engine.vercel.app | /health | ✅ | NextAuth | ✅ | ❌ | Vercel Analytics |
-| **UnityCare** | Railway | health.elmahrosa.org | /health | ✅ | JWT | ✅ | ✅ | UNVERIFIED |
-| **DealMaker** | Railway | dealmaker.elmahrosa.org | /health | ✅ | Multi | ✅ | ✅ | UNVERIFIED |
-| **Bankchain** | Vercel | bankchain.teosegypt.com | /health | ✅ | JWT + OIDC | ✅ | ⚠️ | UNVERIFIED |
-| **Pharaoh Portal** | Railway | pharaoh.teosegypt.com | /health | ✅ | JWT | ✅ | ✅ | UNVERIFIED |
+**Status:** UNCONFIRMED
 
----
+**Description:**
+DATABASE_URL and other credentials may be exposed in CI/CD logs or environment variable configurations. Verify all database access uses TLS and credentials are properly rotated.
 
-## DEPENDENCY AUDIT — CRITICAL FINDINGS
+**Evidence Needed:**
+- Environment variable scanning (GitHub Actions logs)
+- Database connection string verification
+- TLS certificate validation
+- Credential rotation policy
 
-### Node.js Repos (12+ identified)
-- [ ] Verify `npm install` works without errors
-- [ ] Run `npm audit` on each
-- [ ] Check for abandoned dependencies
-- [ ] Test build after dependency updates
+**Phase 1 Verification Method:**
+- Audit CI/CD logs for DATABASE_URL patterns
+- Test database connections for TLS enforcement
+- Verify encryption at rest (if applicable)
+- Document credential rotation schedule
 
-### Python Repos (7+ identified)
-- [ ] Verify `pip install -r requirements.txt` works
-- [ ] Run `pip audit` on each
-- [ ] Check for abandoned packages
-- [ ] Test imports after updates
+**Repositories at Risk:**
+- teos-ai-engine (Neon PostgreSQL)
+- UnityCare-Platform (Railway PostgreSQL)
+- teos-dealmaker (PostgreSQL)
+- teos-bankchain (PostgreSQL)
 
-### TypeScript Repos (25+ identified)
-- [ ] Verify `npx tsc --noEmit` passes strict mode
-- [ ] Check for any `any` types
-- [ ] Verify all types properly defined
+**Current Evidence:** None collected in Phase 0  
+**No remediation until confirmed.**
 
 ---
 
-## PRODUCT HIERARCHY & CONSOLIDATION RECOMMENDATIONS
+### P1 INVESTIGATION — Auth Library Integration Status
 
-### Tier 1: Flagship Products (Ready for Launch)
-1. **TEOS Sentinel Shield** — Execution control infrastructure
-2. **TEOS AI Engine** — Content generation SaaS
-3. **UnityCare Platform** — Healthcare research compliance
-4. **TEOS DealMaker** — AI revenue operating system
+**Status:** UNCONFIRMED
 
-### Tier 2: Infrastructure/Supporting (Enable Tier 1)
-1. **TEOS Bankchain** — Payment rail + identity
-2. **Teos-Pharaoh-Portal** — E-government gateway
-3. **teos-auth-library** — Shared auth module
-4. **teos-compliance-kit** — Compliance templates
+**Description:**
+`teos-auth-library` exists but it is unclear whether it is integrated into production platforms. Verify consistent JWT implementation, MFA enforcement, and session management across all Tier-1 products.
 
-### Tier 3: Developer/Research (Experimental)
-1. **teos-app-studio** — Low-code app builder
-2. **teos-dealmaker** — Already in Tier 1
-3. **teos-sentinel-stack** — CONSOLIDATE WITH SHIELD
-4. **agent-code-risk-mcp** — MCP security scanning
+**Evidence Needed:**
+- Integration status in each platform
+- JWT signature verification
+- MFA enforcement on sensitive roles
+- Session timeout configuration
 
-### Tier 4: Historical (Archive)
-- 12 repositories marked for archival (see Section I above)
+**Phase 1 Verification Method:**
+- Search for auth-library imports in teos-ai-engine, UnityCare, DealMaker, Sentinel
+- Verify JWT implementation consistency
+- Test MFA flow on production endpoints
+- Review session security (HTTPOnly cookies, SameSite, etc.)
 
----
-
-## CONSOLIDATION CANDIDATES
-
-### Immediate (Reduce Duplication)
-
-| Duplicate Set | Primary | Secondary | Action |
-|---------------|---------|-----------|--------|
-| **UCH Variants** | UCH-Backend | Unity-Care-Hospital-Sovereign, uch-sovereign-core, U_C_H2 | CONSOLIDATE: Merge into UCH-Backend, keep single canonical version |
-| **TEOS Platform Monorepos** | teos-app-studio | teos-platform, Teos-Integration | CONSOLIDATE: Clarify dependencies, establish single monorepo pattern |
-| **Bankchain Variants** | teos-bankchain | FPBE-First-Pimisr-Bank, fpbe-bank | CONSOLIDATE: Merge FPBE into Bankchain |
-| **Sentinel Stack** | teos-sentinel-shield | teos-sentinel-stack | CONSOLIDATE: Move teos-sentinel-stack into shield as submodule or reference |
-| **Sovereign System** | Elmahrosa-Core | Teos-Sovereign-System | CLARIFY: Document relationship, merge if duplicate |
+**Current Evidence:** None collected in Phase 0  
+**No remediation until confirmed.**
 
 ---
 
-## RECOMMENDED PHASE 1 ACTIONS
+### P1 INVESTIGATION — MCP Integration Verification
 
-### Security Freeze (P0 — 48 hours)
+**Status:** UNCONFIRMED
 
-1. **Secret Scanning**
-   - [ ] Run `truffleHog` on entire organization
-   - [ ] Run `detect-secrets` on all repos
-   - [ ] Audit CI/CD logs for leaked credentials
-   - [ ] Flag any exposed API keys, JWTs, database URLs
-   - **Deliverable:** Secret inventory report
+**Description:**
+Repositories claim MCP (Model Context Protocol) integration for agent workflows. Verify that MCP contracts are correctly implemented and sandbox isolation works as expected.
 
-2. **Credential Rotation**
-   - [ ] Rotate all flagged secrets
-   - [ ] Update environment variables in CI/CD
-   - [ ] Update production deployments
-   - **Deliverable:** Credential rotation log
+**Evidence Needed:**
+- MCP tool definition inspection
+- Contract compliance verification
+- Sandbox testing
 
-3. **Workflow Audit**
-   - [ ] Review `.github/workflows/` across all repos
-   - [ ] Verify least-privilege Actions permissions
-   - [ ] Ensure no secrets in logs
-   - **Deliverable:** Workflow security audit
+**Phase 1 Verification Method:**
+- Inspect teos-civic-mixer, agent-code-risk-mcp, teos-labs-due-diligence-mcp tool definitions
+- Verify JSON schema compliance
+- Test with Claude or compatible client
+- Confirm isolation enforcement
 
-4. **High-Risk Repos**
-   - [ ] Deep-inspect: teos-bankchain (payment processing)
-   - [ ] Deep-inspect: UnityCare-Platform (PHI handling)
-   - [ ] Deep-inspect: teos-ai-engine (API keys)
-   - **Deliverable:** P0 findings report
+**Repositories Affected:**
+- teos-dealmaker (MCP gateway)
+- teos-civic-mixer (MCP transport)
+- agent-code-risk-mcp (MCP scanning)
+- teos-labs-due-diligence-mcp (MCP tool)
+
+**Current Evidence:** None collected in Phase 0  
+**No remediation until confirmed.**
 
 ---
 
-### Engineering Stabilization (P1 — 1 week)
+### P2 INVESTIGATION — Dependency Vulnerabilities
 
-1. **Build Verification**
-   - [ ] `npm run build` passes on all Node.js repos
-   - [ ] `python -m py_compile` passes on all Python repos
-   - [ ] Fix any build errors
-   - **Deliverable:** Build status matrix
+**Status:** UNCONFIRMED
 
-2. **Test Verification**
-   - [ ] `npm test` passes on all tested repos
-   - [ ] Identify repos with missing tests
-   - [ ] Establish minimum coverage (80% target)
-   - **Deliverable:** Test coverage matrix
+**Description:**
+Node.js, Python, and TypeScript repositories likely have outdated dependencies with known vulnerabilities. Establish baseline and upgrade plan.
 
-3. **Lint & Type Checking**
-   - [ ] `npm run lint` passes zero-warnings
-   - [ ] `npx tsc --noEmit` passes strict mode
-   - [ ] Fix any type errors
-   - **Deliverable:** Code quality matrix
+**Evidence Needed:**
+- npm audit results (Node.js repos)
+- pip audit results (Python repos)
+- Dependency freshness analysis
 
-4. **Dependency Audit**
-   - [ ] Run `npm audit` → fix critical/high
-   - [ ] Run `pip audit` → fix critical/high
-   - [ ] Update lockfiles
-   - **Deliverable:** Dependency audit matrix
+**Phase 1 Verification Method:**
+- Run `npm audit` on all Node.js repos
+- Run `pip audit` on all Python repos
+- Identify critical/high vulnerabilities
+- Plan upgrade schedule
+
+**Current Evidence:** None collected in Phase 0
 
 ---
 
-### Production Verification (P2 — 2 weeks)
+## COMPLIANCE DECISION GATES — EXTERNAL ASSESSMENT REQUIRED
 
-1. **Deployment Status**
-   - [ ] Verify each production repo has deployed instance
-   - [ ] Test `/health` endpoints
-   - [ ] Verify TLS certificates valid
-   - [ ] Verify CORS/security headers
-   - **Deliverable:** Deployment verification matrix
+> **Scope Note:** Repository audit cannot assess regulatory or legal compliance.  
+> These are decision gates requiring external expertise.
 
-2. **Integration Testing**
-   - [ ] Test API integrations (Dodo, Anthropic, Pi Network, etc.)
-   - [ ] Test authentication flows
-   - [ ] Test payment processing
-   - **Deliverable:** Integration test report
+### HIPAA Compliance — UnityCare & Hospital Products
 
-3. **Health Check Setup**
-   - [ ] Standardize `/health`, `/live`, `/ready` endpoints
-   - [ ] Implement basic monitoring
-   - [ ] Set up alert thresholds
-   - **Deliverable:** Health check implementation guide
+**Repositories:** UnityCare-Platform, UCH-Backend, U_C_H2, uch-sovereign-core, Unity-Care-Hospital-Sovereign
 
----
+**Gate Status:** REQUIRES EXTERNAL AUDITOR
 
-## RECOMMENDED PHASE 2 ACTIONS
+**Assessment Scope (Out of Repository Audit):**
+- Data flow analysis against HIPAA Security Rule
+- Technical control adequacy (encryption, access logging, etc.)
+- Business Associate Agreement (BAA) requirements
+- Compliance certification (SOC 2 Type II, HITRUST, etc.)
 
-### Product Consolidation (Weeks 3–4)
+**Repository Evidence (Informational Only):**
+- SHA-256 audit chains noted in documentation
+- MFA enforcement noted (requires verification)
+- Database encryption claims noted (requires verification)
 
-1. **Architecture Rationalization**
-   - [ ] Merge UCH variants into single canonical backend
-   - [ ] Consolidate Bankchain FPBE variants
-   - [ ] Clarify app-studio monorepo structure
-   - [ ] Document Sentinel Shield + sentinel-stack relationship
-   - **Deliverable:** Consolidated architecture diagram
-
-2. **Dependency Mapping**
-   - [ ] Build product dependency graph
-   - [ ] Identify cross-product dependencies
-   - [ ] Resolve circular dependencies
-   - **Deliverable:** Dependency matrix
-
-3. **Documentation**
-   - [ ] Write canonical README for each Tier 1 product
-   - [ ] Create integration guide for platform users
-   - [ ] Document deployment procedures
-   - **Deliverable:** Product documentation
+**Phase 1 Action:** Engage HIPAA compliance auditor; provide this baseline as reference
 
 ---
 
-### Launch Readiness (Weeks 5–6)
+### KYC/AML/Payment Regulation — Bankchain & Fintech Products
 
-1. **Compliance Review**
-   - [ ] UnityCare: HIPAA compliance assessment
-   - [ ] Bankchain: Payment regulation review
-   - [ ] AI Engine: Data privacy review
-   - **Deliverable:** Compliance checklist per product
+**Repositories:** teos-bankchain, teos-activation-service, teos-payment-rail
 
-2. **Market Positioning**
-   - [ ] Define value proposition for each flagship product
-   - [ ] Create positioning statement
-   - [ ] Identify target customer profiles
-   - **Deliverable:** Product positioning document
+**Gate Status:** REQUIRES REGULATORY REVIEW
 
-3. **Go-To-Market**
-   - [ ] Website/landing pages ready
-   - [ ] Pricing documented
-   - [ ] Support channels established
-   - **Deliverable:** GTM readiness checklist
+**Assessment Scope (Out of Repository Audit):**
+- KYC/AML provider compliance verification
+- Payment processor licensing/compliance
+- Sanctions screening integration (OFAC, EU, UN lists)
+- Transaction reporting requirements (AML/CFT)
+- Currency/payment method regulation
+
+**Phase 1 Action:** Engage regulatory/legal counsel; provide this baseline as reference
 
 ---
 
-## ARCHIVE INVENTORY
+### Data Protection/Privacy — All Products
 
-**Candidates for Immediate Archival (12 repos)**
+**Gate Status:** REQUIRES LEGAL REVIEW
 
-| Repo | Reason | Archive Action |
-|------|--------|-----------------|
-| fpbe-bank | Superceded by teos-bankchain | Archive immediately |
-| FPBE-First-Pimisr-Bank | Duplicate of fpbe-bank | Archive immediately |
-| salma-unity-care-hospital | Superceded by UnityCare-Platform | Archive immediately |
-| ElMahrosa-Pi-Smart-City | Superceded by teos-pi-smart-city | Archive immediately |
-| Elmahrosa-Blockchain | No clear purpose, low activity | Archive immediately |
-| TeosEgypt-DomainPlatform | No clear purpose, low activity | Archive immediately |
-| TEOS-NFT-AI-Generator | Superceded by teos-ai-engine | Archive immediately |
-| Nilex | No activity, no clear purpose | Archive immediately |
-| ERT-LAUNCH | Superceded by teos-ecosystem-launchpad | Archive immediately |
-| Mine_alltokens | No clear purpose, low activity | Archive immediately |
-| Teos-Gold-Reserve | No clear purpose, low activity | Archive immediately |
-| demo-repository | GitHub demo template | Archive immediately |
+**Assessment Scope (Out of Repository Audit):**
+- Applicable jurisdictions and data flows
+- GDPR, CCPA, Egypt Law 151/2020 compliance
+- Data processing agreements
+- User consent mechanisms
+- Data retention/deletion policies
 
-**Candidates for Review & Possible Archival (3 repos)**
-
-| Repo | Status | Decision Required |
-|------|--------|-------------------|
-| teos-github-pages-site | Empty repository | Decide: Keep as GH Pages site or archive? |
-| Elmahrosa-Sovereign-AI-Academy | Empty/minimal | Merge with teos-academy or archive? |
-| ConSensus-Elmahrosa-Alexandria-Prep | Unclear purpose | Document purpose or archive? |
+**Phase 1 Action:** Engage privacy/legal counsel; provide this baseline as reference
 
 ---
 
-## LAUNCH READINESS MATRIX
+## NEXT STEPS — PHASE 1 SECURITY FREEZE
 
-| Product | SECURITY | TESTS | BUILD | DEPLOYMENT | DOCS | PRICING | COMPLIANCE | READY |
-|---------|----------|-------|-------|-----------|------|---------|-----------|-------|
-| **Sentinel Shield** | 🔍 VERIFY | ✅ | ✅ | 🔍 VERIFY | ✅ | ❌ | ✅ | ⚠️ P0 |
-| **AI Engine** | 🔍 VERIFY | ⚠️ | ✅ | 🔍 VERIFY | ✅ | ✅ | ⚠️ | ⚠️ P1 |
-| **UnityCare** | 🔍 VERIFY | ✅ | ✅ | 🔍 VERIFY | ✅ | ✅ | 🔍 HIPAA | ⚠️ P1 |
-| **DealMaker** | 🔍 VERIFY | ✅ | ✅ | 🔍 VERIFY | ✅ | ✅ | ⚠️ | ⚠️ P2 |
-| **Bankchain** | 🔍 VERIFY | ⚠️ | ⚠️ | 🔍 VERIFY | ⚠️ | ✅ | 🔍 KYC/AML | ❌ P0 |
-| **Pharaoh Portal** | 🔍 VERIFY | ⚠️ | ⚠️ | 🔍 VERIFY | ⚠️ | ❌ | ⚠️ | ❌ P1 |
+**Phase 1 Entry:** Ready upon Phase 0 Reconciliation approval
 
----
+**Phase 1 Scope:**
+- Active secret scanning on all 77 repos
+- Credential exposure investigation
+- CI/CD workflow security audit
+- Production endpoint verification
+- High-risk repo deep inspection (Bankchain, UnityCare, AI Engine, Sentinel)
 
-## RECOMMENDED PRODUCT LAUNCH ORDER
+**Phase 1 Duration:** 48 hours – 1 week
 
-### Tier 1 (Weeks 1–8: Security + Stabilization)
-- **Priority 1:** TEOS Sentinel Shield (security product, strong governance)
-- **Priority 2:** TEOS AI Engine (SaaS, revenue-generating)
+**Phase 1 Deliverable:** Security Freeze Report with confirmed vs. unconfirmed findings
 
-### Tier 2 (Weeks 9–16: Compliance + Infrastructure)
-- **Priority 3:** UnityCare Platform (institutional, compliance-heavy)
-- **Priority 4:** TEOS DealMaker (B2B platform, enterprise)
-
-### Tier 3 (Weeks 17–24: Supporting Services)
-- **Priority 5:** TEOS Bankchain (payment rail)
-- **Priority 6:** Teos-Pharaoh-Portal (e-government)
-
-### Tier 4 (Weeks 25+: Ecosystem/Developer)
-- Supporting infrastructure, SDKs, APIs, integrations
-
----
-
-## KEY METRICS & SUCCESS CRITERIA
-
-### Security
-- [ ] 0 P0 secrets exposed in Git
-- [ ] 100% of prod repos using TLS
-- [ ] 100% of deployments have health checks
-- [ ] All P0/P1 vulnerabilities fixed
-
-### Quality
-- [ ] 80%+ test coverage on all production repos
-- [ ] 0 lint errors on all repos
-- [ ] All TypeScript repos pass strict mode
-- [ ] All builds pass `npm run build`
-
-### Operations
-- [ ] All production repos have CI/CD
-- [ ] All deployments monitored
-- [ ] All P1 repos have runbooks
-- [ ] All P2 repos have postmortems for incidents
-
-### Business
-- [ ] 4 flagship products launched
-- [ ] 2 infrastructure platforms live
-- [ ] 1 API SDK published
-- [ ] Support contacts established
-
----
-
-## NEXT STEPS
-
-1. **IMMEDIATE (24 hours):**
-   - [ ] Confirm Phase 0 baseline is correct
-   - [ ] Request access to production deployments for verification
-   - [ ] Begin secret scanning
-
-2. **PHASE 1 (48 hours – 1 week):**
-   - [ ] Complete security audit
-   - [ ] Rotate all flagged credentials
-   - [ ] Fix all build errors
-   - [ ] Produce security freeze report
-
-3. **PHASE 2 (Weeks 2–4):**
-   - [ ] Complete engineering stabilization
-   - [ ] Complete production verification
-   - [ ] Produce launch readiness matrix
-
-4. **PHASE 3 (Weeks 5–8):**
-   - [ ] Execute product consolidation
-   - [ ] Launch flagship products
-   - [ ] Produce launch announcement
+**Phase 1 Constraint:** No destructive changes (archive, merge, rotate) without Phase 2 approval
 
 ---
 
 ## REFERENCE DOCUMENTS
 
-- **Classification Rules:** Section above (Framework)
-- **Security Findings:** Section "Security Audit — High-Level Findings"
-- **Production Status:** Section "Production Status Matrix"
-- **Consolidation Map:** Section "Consolidation Candidates"
-- **Launch Readiness:** Section "Launch Readiness Matrix"
-- **Archive Inventory:** Section "Archive Inventory"
+- **Phase 0 Reconciliation:** `docs/PHASE_0_RECONCILIATION.md`
+- **Evidence State Taxonomy:** See CRITICAL BASELINE NOTICE above
+- **Consolidation Candidates:** Section J (REQUIRES HUMAN DECISION)
+- **Archive Candidates:** Section K (REQUIRES HUMAN DECISION)
+- **Compliance Gates:** COMPLIANCE DECISION GATES section (external scope)
 
 ---
 
-**Audit Complete: 2026-09-14**  
-**Classification: 77 repositories across 11 categories**  
-**Security Findings: 11 P0/P1 findings identified**  
-**Recommended Action: Proceed to Phase 1 — Security Freeze**
+**Phase 0 Discovery:** COMPLETE ✅  
+**Phase 0 Reconciliation:** REQUIRED ⚠️  
+**Phase 1 Security Freeze:** BLOCKED UNTIL RECONCILIATION APPROVED
+
