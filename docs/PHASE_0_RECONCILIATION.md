@@ -11,7 +11,7 @@
 ### Authority Statement
 
 **PHASE 0 — DISCOVERY & CLASSIFICATION: COMPLETE ✅**
-- 77 repositories inventoried
+- 77 repositories inventoried ⚠️ *historical / partial Phase 0 discovery figure (2026-09-14) — not the complete organization count, and superseded by the verified 2026-09-25 inventory (87 total / 43 active / 44 archived / 28 public / 59 private). See [ORGANIZATION_INVENTORY_2026-09-25.md](ORGANIZATION_INVENTORY_2026-09-25.md).*
 - A–K classification framework applied
 - Dependency mapping complete
 - Product hierarchy identified
@@ -355,6 +355,11 @@ Language is directive without decision gate.
 
 **Status:** RECONCILED — 77/77 repositories classified in A–K framework with one primary classification each
 
+> ⚠️ The 77 here refers **only** to the Phase 0 discovery set dated 2026-09-14
+> and its internal classification consistency. It is **not** a current
+> organization count. Verified current inventory (2026-09-25):
+> **87 total** / 43 active / 44 archived / **28 public** / 59 private.
+
 ---
 
 ## CORRECTION CHECKLIST
@@ -409,7 +414,7 @@ Language is directive without decision gate.
 
 ✅ **Gates Satisfied by This Reconciliation:**
 
-- [x] 77 repositories classified (A–K primary classification)
+- [x] 77 repositories classified (A–K primary classification) — *historical Phase 0 discovery set (2026-09-14), not a current organization count*
 - [x] Sentinel metrics flagged as outdated/unverified
 - [x] Production claims separated from verification status
 - [x] All P0/P1 findings retagged as INVESTIGATIONS / SUSPECTED

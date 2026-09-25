@@ -2,7 +2,8 @@
 
 **Audit Date:** 2026-09-14  
 **Phase 0 Status:** Discovery & Classification COMPLETE ✅ | Evidence Reconciliation REQUIRED ⚠️  
-**Total Repositories:** 77 (A–K classification, 1 primary per repo)  
+**Total Repositories (Phase 0 discovery, 2026-09-14 — HISTORICAL, SUPERSEDED):** 77 (A–K classification, 1 primary per repo)  
+**Current Verified Inventory (2026-09-25):** 87 total · 43 active / 44 archived · 28 public / 59 private — see [ORGANIZATION_INVENTORY_2026-09-25.md](ORGANIZATION_INVENTORY_2026-09-25.md)  
 **Security Scan:** In progress — baseline metrics and findings require evidence verification  
 **Last Updated:** 2026-09-14 (Reconciliation: 2026-09-14 cbe1ad4)
 
@@ -63,6 +64,21 @@ Elmahrosa International operates a **large, strategically multi-domain portfolio
 | **Abandon/Archive Candidate** | K | 2 | Low activity, unclear purpose (requires human decision) |
 
 **Total:** 77 repositories (4+7+8+12+10+5+8+6+12+3+2 = 77 ✅)
+
+> ⚠️ **HISTORICAL — Phase 0 discovery figure, dated 2026-09-14. SUPERSEDED.**
+>
+> The 77 above is the count of repositories captured during Phase 0 discovery
+> and classification. It is a **partial discovery snapshot, not a complete
+> organization count**, and it should not be read as the number of repositories
+> the organization held on 2026-09-14. Historical membership cannot be
+> reconstructed with certainty from current repository metadata alone, because
+> transfers, deletions, renames, and archival state changes are not recoverable
+> from today's data.
+>
+> **Current verified organization inventory as of 2026-09-25:**
+> **87 total** · 43 active / 44 archived · **28 public** / 59 private.
+> `87` is the **total** count, not a public count.
+> See [ORGANIZATION_INVENTORY_2026-09-25.md](ORGANIZATION_INVENTORY_2026-09-25.md).
 
 ---
 
@@ -521,7 +537,7 @@ Node.js, Python, and TypeScript repositories likely have outdated dependencies w
 **Phase 1 Entry:** Ready upon Phase 0 Reconciliation approval
 
 **Phase 1 Scope:**
-- Active secret scanning on all 77 repos
+- Active secret scanning on all repositories (Phase 0 wrote "77 repos"; verified current scope is **87 total**, of which **28 public** / 59 private — see [ORGANIZATION_INVENTORY_2026-09-25.md](ORGANIZATION_INVENTORY_2026-09-25.md))
 - Credential exposure investigation
 - CI/CD workflow security audit
 - Production endpoint verification

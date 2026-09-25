@@ -42,20 +42,45 @@ This pilot is not open to speculative or commercial actors. Participation is by 
 
 ---
 
-## Repository Inventory (82 Repos)
+## Repository Highlights
 
-| Repository | Function | Status |
-| :--- | :--- | :--- |
-| **[ICBC Constitution](https://github.com/Elmahrosa/Teos-International-Civic-Blockchain-Constitution)** | Supreme Charter & Root of Trust | ✅ Locked |
-| **[Elmahrosa Core](https://github.com/Elmahrosa/Elmahrosa-Core)** | Central Governance Engine | ✅ Active |
-| **[TEOS FORGE](https://github.com/Elmahrosa/TEOS-FORGE)** | DPI Integration Toolkit | ✅ Active |
-| **[TEOS API Sovereign](https://github.com/Elmahrosa/TEOS-API-Sovereign)** | Sovereign Developer SDK | ✅ Public |
-| **[TEOS Governance](https://github.com/Elmahrosa/TEOS-Governance)** | Executable Governance Logic | ✅ Active |
-| **[Sovereign Stack 2026](https://github.com/Elmahrosa/TEOS-Egypt-SovereignStack-2026)** | National Pilot Architecture | 🚧 In Progress |
-| **[Pharaoh Portal](https://github.com/Elmahrosa/Teos-Pharaoh-Portal)** | Civic Access Gateway | ✅ Active |
-| **[TEOS Superintelligence](https://github.com/Elmahrosa/teos-superintelligence)** | Sovereign AI Orchestration | ✅ Active |
+> **This table is a selected highlights subset — it is NOT the complete
+> organization repository inventory.** It is not intended to enumerate every
+> repository.
+>
+> **Verified organization totals as of 2026-09-25:**
+> **87 repositories total** · 43 active / 44 archived · **28 public** / 59 private.
+>
+> `87` is the **total** repository count, **not** a public count.
+> The public count is **28** (24 public + active, 4 public + archived).
+>
+> The "Status (as listed)" column below preserves the original editorial
+> annotations and is retained for historical reference only — several of those
+> claims no longer hold. The "Visibility" and "Archived" columns reflect
+> verified organization state on 2026-09-25.
+>
+> For the complete verified inventory, see
+> [`docs/ORGANIZATION_INVENTORY_2026-09-25.md`](docs/ORGANIZATION_INVENTORY_2026-09-25.md).
 
-> View the full inventory: [github.com/Elmahrosa?tab=repositories](https://github.com/Elmahrosa?tab=repositories)
+| Repository | Function | Status (as listed) | Visibility | Archived |
+| :--- | :--- | :--- | :--- | :--- |
+| **[ICBC Constitution](https://github.com/Elmahrosa/Teos-International-Civic-Blockchain-Constitution)** | Supreme Charter & Root of Trust | ✅ Locked | Public | No |
+| **[Elmahrosa Core](https://github.com/Elmahrosa/Elmahrosa-Core)** | Central Governance Engine | ✅ Active | Private | Yes |
+| **[TEOS FORGE](https://github.com/Elmahrosa/TEOS-FORGE)** | DPI Integration Toolkit | ✅ Active | Public | No |
+| **[TEOS API Sovereign](https://github.com/Elmahrosa/TEOS-API-Sovereign)** | Sovereign Developer SDK | ✅ Public | Private | Yes |
+| **[TEOS Governance](https://github.com/Elmahrosa/TEOS-Governance)** | Executable Governance Logic | ✅ Active | Private | Yes |
+| **[Sovereign Stack 2026](https://github.com/Elmahrosa/TEOS-Egypt-SovereignStack-2026)** | National Pilot Architecture | 🚧 In Progress | Private | Yes |
+| **[Pharaoh Portal](https://github.com/Elmahrosa/Teos-Pharaoh-Portal)** | Civic Access Gateway | ✅ Active | Private | Yes |
+| **[TEOS Superintelligence](https://github.com/Elmahrosa/teos-superintelligence)** | Sovereign AI Orchestration | ✅ Active | Private | No |
+
+> **Note on accessibility:** 6 of the 8 repositories listed above are currently
+> **private** and 5 of those are **archived**, so their content is not publicly
+> accessible. The original "Status" annotations for those entries are therefore
+> no longer accurate indicators of availability.
+
+> View publicly accessible repositories:
+> [github.com/Elmahrosa?tab=repositories](https://github.com/Elmahrosa?tab=repositories)
+> (this view lists the **28 public** repositories only).
 
 ---
 
