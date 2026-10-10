@@ -1,0 +1,13 @@
+# CODEOWNERS — default ownership
+
+# Every change in this repository requires review/approval from the owner.
+# Org-team variant (preferred once the `owners` team exists in the org):
+#   * @Elmahrosa/owners
+# Until then, pin to the owner account:
+* @Aymanseif
+
+# Governance/process files — reviewed by the same owner by default:
+# /.github/          @Aymanseif
+# SECURITY.md        @Aymanseif
+# LICENSE            @Aymanseif
+# REPO_LOCK.md       @Aymanseif
